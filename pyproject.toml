@@ -1,0 +1,38 @@
+[project]
+name = "incident-responder"
+version = "0.1.0"
+description = "Multi-agent cloud incident responder on Google ADK, evaluated on replayed synthetic incidents"
+requires-python = ">=3.11"
+dependencies = [
+    "google-adk>=2.14,<3",
+    "httpx>=0.27,<1",
+    "pydantic>=2.12,<3",
+    "pyyaml>=6,<7",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8,<10",
+    "ruff>=0.15",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+markers = ["live: calls a real model backend (never runs in CI or on bare `make test`)"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["docs/**", "*.md"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["agents", "evals", "guard", "llm", "rag", "state", "telemetry", "tools", "config"]

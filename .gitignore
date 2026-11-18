@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.env
+.llm_cache/
+evals/results/*.json
+!evals/results/.gitkeep
+*.db
+*.db-journal
+.traces/
+.verification/
