@@ -1,0 +1,14 @@
+root_cause: bad_deploy
+service: checkout-api
+summary: Deploy dpl-4f21 renamed the payments base URL environment variable from PAYMENTS_BASE_URL to
+  PAYMENT_BASE_URL and removed the fallback, so the URL resolved empty and payment calls went to 127.0.0.1.
+acceptable_fixes:
+- rollback_deploy
+must_find:
+- file: logs/checkout-api.jsonl
+  pattern: PAYMENT_BASE_URL resolved to ''
+- file: deploys.json
+  pattern: dpl-4f21
+- file: logs/checkout-api.jsonl
+  pattern: connection refused
+escalation_ok: false

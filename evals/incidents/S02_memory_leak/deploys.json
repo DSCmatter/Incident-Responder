@@ -1,0 +1,13 @@
+{
+  "deploys": [
+    {
+      "deploy_id": "dpl-31aa",
+      "service": "search-api",
+      "ts": "2026-11-10T00:31:40Z",
+      "commit": "d97c314",
+      "author": "marco",
+      "summary": "search: attach in-process result cache",
+      "diff": "--- a/services/search/cache.py\n+++ b/services/search/cache.py\n@@ -4,6 +4,12 @@ from collections import OrderedDict\n def attach(settings):\n-    return None\n+    return ResultCache(\n+        max_entries=settings.cache_max_entries,  # 0 means no eviction\n+        ttl_seconds=settings.cache_ttl,\n+    )\n"
+    }
+  ]
+}

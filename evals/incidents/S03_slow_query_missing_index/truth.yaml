@@ -1,0 +1,14 @@
+root_cause: slow_query
+service: orders-api
+summary: The orders-by-customer listing filters and sorts on columns with no index, so Postgres seq-scans
+  4.8M rows; database latency steps from 38ms to about 4s and orders-api requests hit the 5s timeout.
+acceptable_fixes:
+- add_index
+must_find:
+- file: logs/orders-db.jsonl
+  pattern: Seq Scan on orders
+- file: logs/orders-db.jsonl
+  pattern: FROM orders WHERE customer_id = $1
+- file: metrics/orders-db.json
+  pattern: '"db_latency_ms"'
+escalation_ok: false

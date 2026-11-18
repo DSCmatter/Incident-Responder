@@ -1,0 +1,13 @@
+{
+  "deploys": [
+    {
+      "deploy_id": "dpl-88c0",
+      "service": "web",
+      "ts": "2026-11-14T04:12:03Z",
+      "commit": "f578072",
+      "author": "sam",
+      "summary": "web: bump marketing banner copy",
+      "diff": "--- a/web/banner.tsx\n+++ b/web/banner.tsx\n@@\n-  <h1>Ship faster</h1>\n+  <h1>Ship faster, safely</h1>\n"
+    }
+  ]
+}

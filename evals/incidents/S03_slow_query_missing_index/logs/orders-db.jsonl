@@ -1,0 +1,31 @@
+{"ts":"2026-11-14T10:12:00Z","level":"info","msg":"autovacuum: table orders last_analyze 6 days ago, dead_tuples=12044"}
+{"ts":"2026-11-14T10:41:35Z","level":"warn","msg":"duration: 4125.999 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T10:41:35Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T10:43:10Z","level":"warn","msg":"duration: 4224.556 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T10:43:10Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T10:44:45Z","level":"warn","msg":"duration: 4138.293 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T10:44:45Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T10:46:20Z","level":"warn","msg":"duration: 4147.880 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T10:46:20Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T10:47:55Z","level":"warn","msg":"duration: 3962.790 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T10:47:55Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T10:49:30Z","level":"warn","msg":"duration: 3962.750 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T10:49:30Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T10:51:05Z","level":"warn","msg":"duration: 4068.189 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T10:51:05Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T10:52:40Z","level":"warn","msg":"duration: 4043.431 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T10:52:40Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T10:54:15Z","level":"warn","msg":"duration: 3976.770 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T10:54:15Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T10:55:50Z","level":"warn","msg":"duration: 4211.331 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T10:55:50Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T10:57:25Z","level":"warn","msg":"duration: 4215.669 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T10:57:25Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T10:59:00Z","level":"warn","msg":"duration: 4118.831 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T10:59:00Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T11:00:35Z","level":"warn","msg":"duration: 4245.639 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T11:00:35Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T11:02:10Z","level":"warn","msg":"duration: 4046.622 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T11:02:10Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}
+{"ts":"2026-11-14T11:03:45Z","level":"warn","msg":"duration: 4275.670 ms  statement: SELECT id, total, created_at FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT 20"}
+{"ts":"2026-11-14T11:03:45Z","level":"info","msg":"plan: Seq Scan on orders  (cost=0.00..188431.00 rows=4821331 width=48) Filter: (customer_id = $1)"}

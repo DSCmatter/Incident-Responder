@@ -1,0 +1,11 @@
+id: S01
+title: Checkout errors after a deploy
+split: dev
+difficulty: easy
+flags: []
+postmortem_id: pm-2026-04-checkout-outage
+alert:
+  time: '2026-11-12T09:12:00Z'
+  service: checkout-api
+  summary: Checkout success rate below 40% for 20 minutes
+seed: 101

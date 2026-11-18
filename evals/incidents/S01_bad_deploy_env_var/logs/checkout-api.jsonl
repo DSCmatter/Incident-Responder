@@ -1,0 +1,202 @@
+{"ts":"2026-11-12T08:00:37Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=87 trace=5bd2ec89b7a6"}
+{"ts":"2026-11-12T08:00:59Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=45 trace=38c19a1f7aa5"}
+{"ts":"2026-11-12T08:01:58Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=118 trace=543b365e52e7"}
+{"ts":"2026-11-12T08:01:58Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=38 trace=71f916bfc355"}
+{"ts":"2026-11-12T08:02:49Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=118 trace=3d23537696b2"}
+{"ts":"2026-11-12T08:03:10Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=26 trace=77bc6e1e9334"}
+{"ts":"2026-11-12T08:03:19Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=123 trace=ae1e9ffa5c44"}
+{"ts":"2026-11-12T08:03:51Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=66 trace=6c473aa77192"}
+{"ts":"2026-11-12T08:04:04Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=71 trace=df3001ab33e5"}
+{"ts":"2026-11-12T08:04:59Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=62 trace=0599cbacc914"}
+{"ts":"2026-11-12T08:05:23Z","level":"info","msg":"method=GET path=/healthz status=304 dur_ms=122 trace=fc5127430a5c"}
+{"ts":"2026-11-12T08:05:32Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=26 trace=2698c37bc213"}
+{"ts":"2026-11-12T08:06:25Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=90 trace=2a9479a263f7"}
+{"ts":"2026-11-12T08:07:01Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=41 trace=87d3b0eaa33a"}
+{"ts":"2026-11-12T08:07:43Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=26 trace=935f0830b057"}
+{"ts":"2026-11-12T08:07:52Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=33 trace=b4aaad02f17e"}
+{"ts":"2026-11-12T08:08:39Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=35 trace=2dc7af8e80a2"}
+{"ts":"2026-11-12T08:09:29Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=132 trace=724c8c1e311a"}
+{"ts":"2026-11-12T08:09:51Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=88 trace=b06f8ce2aef8"}
+{"ts":"2026-11-12T08:09:56Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=37 trace=4fdbe26cf401"}
+{"ts":"2026-11-12T08:10:22Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=53 trace=d312add72a33"}
+{"ts":"2026-11-12T08:10:50Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=37 trace=7753400131ab"}
+{"ts":"2026-11-12T08:11:13Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=120 trace=f596e6ab3cbf"}
+{"ts":"2026-11-12T08:11:50Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=101 trace=e338fa2b00e9"}
+{"ts":"2026-11-12T08:12:11Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=127 trace=75759ced1c44"}
+{"ts":"2026-11-12T08:13:11Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=48 trace=45f3ca751389"}
+{"ts":"2026-11-12T08:13:30Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=86 trace=559850bb9a8c"}
+{"ts":"2026-11-12T08:13:31Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=104 trace=e4e75d45704e"}
+{"ts":"2026-11-12T08:14:25Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=113 trace=842f386c033c"}
+{"ts":"2026-11-12T08:14:34Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=33 trace=57ad2556adf3"}
+{"ts":"2026-11-12T08:15:07Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=128 trace=33d0aa4398cc"}
+{"ts":"2026-11-12T08:16:08Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=58 trace=ad074cda5c04"}
+{"ts":"2026-11-12T08:16:13Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=98 trace=357c8cc00e24"}
+{"ts":"2026-11-12T08:16:49Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=73 trace=7474341c3d30"}
+{"ts":"2026-11-12T08:17:19Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=92 trace=57b5fe2962af"}
+{"ts":"2026-11-12T08:18:17Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=24 trace=8d8044dc452a"}
+{"ts":"2026-11-12T08:18:45Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=116 trace=7714e65d0590"}
+{"ts":"2026-11-12T08:19:09Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=103 trace=c521462da397"}
+{"ts":"2026-11-12T08:19:33Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=52 trace=a3659abdbf04"}
+{"ts":"2026-11-12T08:19:39Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=121 trace=a2c3db918499"}
+{"ts":"2026-11-12T08:20:07Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=120 trace=56c67320224d"}
+{"ts":"2026-11-12T08:21:03Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=109 trace=6acaf9a56531"}
+{"ts":"2026-11-12T08:21:06Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=45 trace=cbdea4ed7138"}
+{"ts":"2026-11-12T08:22:04Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=111 trace=a6b73139d05d"}
+{"ts":"2026-11-12T08:22:10Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=93 trace=aa2fc841c756"}
+{"ts":"2026-11-12T08:23:17Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=22 trace=3074fc52a928"}
+{"ts":"2026-11-12T08:23:51Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=79 trace=20ffe8595f01"}
+{"ts":"2026-11-12T08:23:57Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=85 trace=0329ef4aec11"}
+{"ts":"2026-11-12T08:24:07Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=75 trace=921a9c83925f"}
+{"ts":"2026-11-12T08:25:15Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=69 trace=2248c0fecf02"}
+{"ts":"2026-11-12T08:25:36Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=39 trace=d3f2b9261396"}
+{"ts":"2026-11-12T08:25:44Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=105 trace=0fd387dfba69"}
+{"ts":"2026-11-12T08:26:24Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=127 trace=eb5be0baa504"}
+{"ts":"2026-11-12T08:27:15Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=48 trace=63a84e0e5da1"}
+{"ts":"2026-11-12T08:27:57Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=43 trace=26b368710e26"}
+{"ts":"2026-11-12T08:28:08Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=80 trace=3197ecfca51f"}
+{"ts":"2026-11-12T08:28:51Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=85 trace=089243978c3f"}
+{"ts":"2026-11-12T08:28:56Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=114 trace=30dce862ec51"}
+{"ts":"2026-11-12T08:29:48Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=93 trace=a987d27edcbd"}
+{"ts":"2026-11-12T08:30:16Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=133 trace=7546f03f07c0"}
+{"ts":"2026-11-12T08:30:39Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=25 trace=abf0740b69d7"}
+{"ts":"2026-11-12T08:30:49Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=20 trace=7b7f5f0e2e59"}
+{"ts":"2026-11-12T08:31:33Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=80 trace=6437fc743e1e"}
+{"ts":"2026-11-12T08:31:54Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=67 trace=5a9e0b2119b6"}
+{"ts":"2026-11-12T08:32:53Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=41 trace=b00b6bbdb6a0"}
+{"ts":"2026-11-12T08:33:12Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=123 trace=36e9ba721bcf"}
+{"ts":"2026-11-12T08:33:43Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=35 trace=2a0ec2037e7f"}
+{"ts":"2026-11-12T08:34:03Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=47 trace=e0cb6ba45e77"}
+{"ts":"2026-11-12T08:34:30Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=98 trace=9f8e5f7686de"}
+{"ts":"2026-11-12T08:34:54Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=31 trace=b53fb687344e"}
+{"ts":"2026-11-12T08:35:18Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=79 trace=c5e53e1ab788"}
+{"ts":"2026-11-12T08:35:38Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=67 trace=9f1219ed164a"}
+{"ts":"2026-11-12T08:36:48Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=87 trace=e2ac0fad9b3e"}
+{"ts":"2026-11-12T08:37:10Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=47 trace=c174ddc9a6c4"}
+{"ts":"2026-11-12T08:37:13Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=62 trace=61d9d48d9265"}
+{"ts":"2026-11-12T08:38:24Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=115 trace=e95f2c450e93"}
+{"ts":"2026-11-12T08:38:30Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=109 trace=87732886e646"}
+{"ts":"2026-11-12T08:38:44Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=124 trace=1a6b95912bb3"}
+{"ts":"2026-11-12T08:39:08Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=92 trace=ad4ee0fe4b98"}
+{"ts":"2026-11-12T08:39:45Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=24 trace=300d8f36ff41"}
+{"ts":"2026-11-12T08:40:49Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=38 trace=6cb47fc2b26e"}
+{"ts":"2026-11-12T08:40:52Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=36 trace=7ff67b73fb14"}
+{"ts":"2026-11-12T08:41:30Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=121 trace=131ce2f75aba"}
+{"ts":"2026-11-12T08:42:06Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=18 trace=fc0a01d04bf1"}
+{"ts":"2026-11-12T08:42:20Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=47 trace=e301ef59c245"}
+{"ts":"2026-11-12T08:43:10Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=128 trace=68d0e9040432"}
+{"ts":"2026-11-12T08:43:15Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=116 trace=94b5ed075e8c"}
+{"ts":"2026-11-12T08:43:51Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=127 trace=6272b21f8ffa"}
+{"ts":"2026-11-12T08:44:20Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=55 trace=4928f50223c5"}
+{"ts":"2026-11-12T08:45:03Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=38 trace=ea9fa9104804"}
+{"ts":"2026-11-12T08:45:09Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=85 trace=d2e56f8ef4aa"}
+{"ts":"2026-11-12T08:46:26Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=75 trace=ecdf7e53e2a2"}
+{"ts":"2026-11-12T08:46:36Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=28 trace=e68e6a38243e"}
+{"ts":"2026-11-12T08:47:13Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=19 trace=2ceb4d9e23e1"}
+{"ts":"2026-11-12T08:47:39Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=113 trace=0f9d67e2ac25"}
+{"ts":"2026-11-12T08:48:29Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=105 trace=34732d52baf3"}
+{"ts":"2026-11-12T08:48:50Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=40 trace=0da2e9223be0"}
+{"ts":"2026-11-12T08:48:54Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=82 trace=cbb33364126e"}
+{"ts":"2026-11-12T08:49:00Z","level":"info","msg":"deployment dpl-4f21 revision 7d9f rollout complete"}
+{"ts":"2026-11-12T08:49:02Z","level":"warn","msg":"config: PAYMENT_BASE_URL resolved to '' (fallback disabled)"}
+{"ts":"2026-11-12T08:49:20Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=3 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:49:40Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=4 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:49:41Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=115 trace=a2b1e409e338"}
+{"ts":"2026-11-12T08:49:55Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=47 trace=5cd8cf36c345"}
+{"ts":"2026-11-12T08:50:00Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=5 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:50:20Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=3 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:50:40Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=5 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:50:42Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=74 trace=11b45212ba3e"}
+{"ts":"2026-11-12T08:50:56Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=135 trace=b21e09f15c5a"}
+{"ts":"2026-11-12T08:51:00Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=4 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:51:20Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=6 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:51:40Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=120 trace=5da81280a5ae"}
+{"ts":"2026-11-12T08:51:40Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=2 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:51:52Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=25 trace=cac614f980ef"}
+{"ts":"2026-11-12T08:52:00Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=6 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:52:20Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=4 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:52:40Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=3 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:52:43Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=43 trace=f652e7a69cba"}
+{"ts":"2026-11-12T08:52:52Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=46 trace=cc67464b21ca"}
+{"ts":"2026-11-12T08:53:00Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=3 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:53:08Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=128 trace=1a4494cc5f4f"}
+{"ts":"2026-11-12T08:53:20Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=5 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:53:40Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=2 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:54:00Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=6 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:54:11Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=94 trace=5f80485ba33b"}
+{"ts":"2026-11-12T08:54:20Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=6 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:54:26Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=96 trace=ef180720c455"}
+{"ts":"2026-11-12T08:54:40Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=2 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:55:00Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=6 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:55:06Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=71 trace=8234abef27b1"}
+{"ts":"2026-11-12T08:55:20Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=4 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:55:33Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=25 trace=4efd060dc8fc"}
+{"ts":"2026-11-12T08:55:40Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=3 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:55:53Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=60 trace=2bbac835d7af"}
+{"ts":"2026-11-12T08:56:00Z","level":"error","msg":"POST /v1/checkout 502 upstream=payments dur_ms=4 err=dial tcp 127.0.0.1:8443: connect: connection refused"}
+{"ts":"2026-11-12T08:56:04Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=86 trace=26f145fb32b2"}
+{"ts":"2026-11-12T08:56:52Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=48 trace=08afb3e470c3"}
+{"ts":"2026-11-12T08:57:33Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=92 trace=151e661b0699"}
+{"ts":"2026-11-12T08:57:59Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=69 trace=e53cd30349d4"}
+{"ts":"2026-11-12T08:58:24Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=60 trace=6a55ba038207"}
+{"ts":"2026-11-12T08:58:34Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=88 trace=c5b97834d7f8"}
+{"ts":"2026-11-12T08:59:46Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=37 trace=39af05365bee"}
+{"ts":"2026-11-12T09:00:01Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=84 trace=293acab151f9"}
+{"ts":"2026-11-12T09:00:58Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=66 trace=e957d0c19fda"}
+{"ts":"2026-11-12T09:01:21Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=43 trace=a434aff96744"}
+{"ts":"2026-11-12T09:01:24Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=38 trace=48aadc9f9691"}
+{"ts":"2026-11-12T09:02:09Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=137 trace=b426b8ce4431"}
+{"ts":"2026-11-12T09:02:11Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=111 trace=0e46a6bc4a91"}
+{"ts":"2026-11-12T09:02:55Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=71 trace=87c6a98398c6"}
+{"ts":"2026-11-12T09:03:46Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=44 trace=31b9214905e9"}
+{"ts":"2026-11-12T09:04:00Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=37 trace=2d1d6c65e502"}
+{"ts":"2026-11-12T09:04:24Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=128 trace=c3e614004020"}
+{"ts":"2026-11-12T09:04:36Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=86 trace=75bfa6cb495c"}
+{"ts":"2026-11-12T09:05:42Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=50 trace=907786afe829"}
+{"ts":"2026-11-12T09:06:05Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=41 trace=ab761b0444b8"}
+{"ts":"2026-11-12T09:06:28Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=107 trace=0e4e3962c71c"}
+{"ts":"2026-11-12T09:07:03Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=44 trace=3ccd556800b1"}
+{"ts":"2026-11-12T09:07:30Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=98 trace=9c9b3687afc2"}
+{"ts":"2026-11-12T09:08:18Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=89 trace=1cf6728a8a5e"}
+{"ts":"2026-11-12T09:08:41Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=74 trace=2e3fdc18a4af"}
+{"ts":"2026-11-12T09:08:52Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=49 trace=4b3e517aa511"}
+{"ts":"2026-11-12T09:09:32Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=27 trace=23f8e060e322"}
+{"ts":"2026-11-12T09:09:59Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=120 trace=d87602b85aa0"}
+{"ts":"2026-11-12T09:10:33Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=34 trace=8e76a66e5a11"}
+{"ts":"2026-11-12T09:10:40Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=124 trace=a27248f7c8c7"}
+{"ts":"2026-11-12T09:11:07Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=52 trace=cea4c414d36b"}
+{"ts":"2026-11-12T09:11:37Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=37 trace=57aeb7ca4e90"}
+{"ts":"2026-11-12T09:12:50Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=74 trace=f21a6ce86f82"}
+{"ts":"2026-11-12T09:12:52Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=110 trace=3cd9f2a575e2"}
+{"ts":"2026-11-12T09:13:44Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=22 trace=72242ebd875d"}
+{"ts":"2026-11-12T09:13:47Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=88 trace=d0dca1a2b69d"}
+{"ts":"2026-11-12T09:14:30Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=87 trace=1cb24a0dbffd"}
+{"ts":"2026-11-12T09:15:21Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=63 trace=40d146d5a217"}
+{"ts":"2026-11-12T09:15:26Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=44 trace=af8598abfcf6"}
+{"ts":"2026-11-12T09:15:51Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=41 trace=3b5951c44c6e"}
+{"ts":"2026-11-12T09:16:06Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=85 trace=c7cbb164ed40"}
+{"ts":"2026-11-12T09:17:07Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=100 trace=fcbcf612764a"}
+{"ts":"2026-11-12T09:17:31Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=72 trace=b60684f12371"}
+{"ts":"2026-11-12T09:17:51Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=116 trace=093a8670379f"}
+{"ts":"2026-11-12T09:18:06Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=126 trace=76412db04a77"}
+{"ts":"2026-11-12T09:18:30Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=119 trace=6512898beb01"}
+{"ts":"2026-11-12T09:19:51Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=26 trace=1b198cb588fa"}
+{"ts":"2026-11-12T09:20:21Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=91 trace=fa658d432355"}
+{"ts":"2026-11-12T09:20:31Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=51 trace=b018c9624050"}
+{"ts":"2026-11-12T09:20:46Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=81 trace=3f2f144d7bc0"}
+{"ts":"2026-11-12T09:21:31Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=118 trace=ee5576db2720"}
+{"ts":"2026-11-12T09:22:10Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=140 trace=4681e31aec9c"}
+{"ts":"2026-11-12T09:22:34Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=99 trace=b230e166f8fb"}
+{"ts":"2026-11-12T09:23:09Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=40 trace=f58c69124cf3"}
+{"ts":"2026-11-12T09:23:31Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=64 trace=60aeddb0ff75"}
+{"ts":"2026-11-12T09:24:02Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=30 trace=466606b9487f"}
+{"ts":"2026-11-12T09:24:27Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=129 trace=b2bd5e955a68"}
+{"ts":"2026-11-12T09:25:08Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=118 trace=21dd521236ba"}
+{"ts":"2026-11-12T09:25:45Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=96 trace=f312cc94490f"}
+{"ts":"2026-11-12T09:26:05Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=78 trace=40a8fa55eb51"}
+{"ts":"2026-11-12T09:26:19Z","level":"info","msg":"method=GET path=/v1/checkout status=200 dur_ms=78 trace=3b920fa9239a"}
+{"ts":"2026-11-12T09:26:53Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=128 trace=c00639ffb05d"}
+{"ts":"2026-11-12T09:27:53Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=127 trace=521e4491c64c"}
+{"ts":"2026-11-12T09:27:58Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=124 trace=d2b876e2c45d"}
+{"ts":"2026-11-12T09:28:03Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=66 trace=f7d3aee4627b"}
+{"ts":"2026-11-12T09:28:39Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=39 trace=834b94d8abbc"}
+{"ts":"2026-11-12T09:29:41Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=79 trace=ff8b82222c33"}

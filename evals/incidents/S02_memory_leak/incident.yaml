@@ -1,0 +1,11 @@
+id: S02
+title: Search latency climbing for two hours
+split: dev
+difficulty: medium
+flags: []
+postmortem_id: pm-2026-07-search-oom
+alert:
+  time: '2026-11-13T13:40:00Z'
+  service: search-api
+  summary: search p95 above 1s and error rate rising
+seed: 202

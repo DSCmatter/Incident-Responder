@@ -1,0 +1,13 @@
+{
+  "deploys": [
+    {
+      "deploy_id": "dpl-4f21",
+      "service": "checkout-api",
+      "ts": "2026-11-12T08:49:12Z",
+      "commit": "428e7e3",
+      "author": "priya",
+      "summary": "checkout: require payments base url from environment",
+      "diff": "--- a/services/checkout/config.py\n+++ b/services/checkout/config.py\n@@ -18,7 +18,7 @@ class Settings:\n     retry_budget = 3\n-    payments_base_url = os.environ.get(\n-        \"PAYMENTS_BASE_URL\", \"https://payments.internal:8443\"\n-    )\n+    payments_base_url = os.environ.get(\"PAYMENT_BASE_URL\", \"\")\n+    if not payments_base_url:\n+        logger.warning(\"PAYMENT_BASE_URL resolved to %r (fallback disabled)\", payments_base_url)\n"
+    }
+  ]
+}

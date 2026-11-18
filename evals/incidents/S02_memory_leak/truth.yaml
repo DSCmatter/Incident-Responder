@@ -1,0 +1,15 @@
+root_cause: resource_exhaustion
+service: search-api
+summary: An unbounded in-process result cache attached three days earlier grows with every distinct query;
+  heap climbs linearly to the 1536Mi limit until the process is OOMKilled.
+acceptable_fixes:
+- restart_service
+- rollback_deploy
+must_find:
+- file: logs/search-api.jsonl
+  pattern: max_entries=0
+- file: logs/search-api.jsonl
+  pattern: OOMKilled
+- file: metrics/search-api.json
+  pattern: '"mem_mb"'
+escalation_ok: false
