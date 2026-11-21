@@ -17,7 +17,9 @@ def _markdown_files() -> list[Path]:
     return [
         path
         for path in ROOT.rglob("*.md")
-        if ".venv" not in path.parts and "node_modules" not in path.parts
+        if not any(
+            part.startswith(".") or part == "node_modules" for part in path.relative_to(ROOT).parts
+        )
     ]
 
 
