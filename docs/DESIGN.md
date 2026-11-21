@@ -104,9 +104,12 @@ class CriticVerdict(BaseModel):
     issues: list[str]
     required_changes: list[str]
 
+class ApprovalDecision(str, Enum):
+    approved = "approved"; rejected = "rejected"
+
 class Approval(BaseModel):
     run_id: str
-    decision: str                      # "approved" | "rejected" | "edited"
+    decision: ApprovalDecision         # approved | rejected
     decided_by: str
     note: str = ""
 ```
@@ -132,8 +135,12 @@ Write tools (dry-run by default; execute only after an `Approval` record exists)
 | `apply_config_change` | `(service, key, value)` |
 | `scale_service` | `(service, replicas)` |
 | `rotate_certificate` | `(service)` |
+| `add_index` | `(service, table, columns)` |
+| `free_disk` | `(service, path)` |
 
-Write tools take effect only on the fake demo stack. The guard layer refuses any write call without a matching approval for the same run, action, and target.
+Each fix class maps to exactly one write tool (`WRITE_TOOLS` in `tools/write.py`): `rollback_deploy` targets a deploy id; every other class targets a service, with the params above. `escalate_human` has no tool; the run ends `ESCALATED`. A proposal is checked against the incident (target exists, params match, rollback plan present) before the fix agent's answer is accepted, and its dry-run is stored with it.
+
+Write tools take effect only on the fake demo stack. The guard layer refuses any write call without a matching approval for the same run, action, and target. An `Approval` approves the single proposal stored for its run, so "matching" means: the approval is for this run and says approved, the run is in `APPROVED`, and the proposal being executed equals the stored one.
 
 ## 5. Agents
 
@@ -143,7 +150,7 @@ Write tools take effect only on the fake demo stack. The guard layer refuses any
 | Triage | delegated | alert payload, service map | `Triage` | one call |
 | Diagnosis | delegated, ReAct | read-only tools, `search_runbooks`, verifier (as tool) | `Findings` | all claims verified, or 6 steps |
 | Evidence verifier | tool | evidence store (read-only) | `Verification` | one call |
-| Fix | delegated, in loop | `get_deploy_diff`, `search_runbooks` | `FixProposal` | per loop round |
+| Fix | delegated, in loop | `get_deploy_diff`, `search_runbooks` (T13) | `FixProposal` | one answer, max 3 calls |
 | Critic | in loop | evidence store, findings | `CriticVerdict` | approve or round limit |
 
 ADK wiring: every agent is an ADK `LlmAgent` whose model is `ClientModel` in `agents/adk.py`, so each call still goes through `llm/client.py`. That module is the only one allowed to import `google.genai` types (ruff TID251 enforces it). An agent answers only by calling its `submit_<schema>` tool. The tool validates the arguments against the schema plus agent checks (known service, cited ids exist in the store), returns the reason on a rejection, and ends the agent on the second rejection with no result, which the run reports as `FAILED`. Prompts live in `agents/prompts/<agent>.md` and start with `version: <id>`, which is logged with every call.
@@ -176,7 +183,9 @@ Persist to SQLite (or Postgres) so a run can pause for approval and resume.
 
 States: `NEW`, `TRIAGED`, `DIAGNOSED`, `VERIFIED`, `FIX_PROPOSED`, `CRITIQUED`, `AWAITING_APPROVAL`, `APPROVED`, `REJECTED`, `EXECUTED`, `DONE`, `ESCALATED`, `FAILED`.
 
-Table `runs`: `run_id`, `incident_id`, `state`, `payloads` (JSON per stage), `llm_calls`, `tokens_in`, `tokens_out`, `cost_usd_equiv`, `started_at`, `updated_at`. Table `evidence`: `run_id`, `id`, `kind`, `source`, `content`, `query`. Table `approvals`: the `Approval` fields plus `ts`.
+Table `runs`: `run_id`, `incident_id`, `state`, `stop_reason`, `payloads` (JSON per stage: `triage`, `findings`, `proposal`, `dry_run`, `executed`), `llm_calls`, `tokens_in`, `tokens_out`, `cost_usd_equiv`, `duration_ms`, `started_at`, `updated_at`. Table `evidence`: `run_id`, `id`, `kind`, `source`, `content`, `query`, `seq`. Table `approvals`: the `Approval` fields plus `ts`, one row per run. Stored in `.state/runs.db` (`state/store.py`).
+
+Transitions (`TRANSITIONS` in `state/store.py`; any other move raises): `NEW -> TRIAGED -> DIAGNOSED -> [VERIFIED ->] FIX_PROPOSED -> [CRITIQUED ->] AWAITING_APPROVAL -> APPROVED -> EXECUTED -> DONE`, `CRITIQUED -> FIX_PROPOSED` for another round, `AWAITING_APPROVAL -> REJECTED`, `APPROVED -> FAILED` when the guard refuses, and `ESCALATED` or `FAILED` from any state before `AWAITING_APPROVAL`. A recorded decision resumes a paused run; repeating the same decision changes nothing.
 
 ## 7. LLM client (single entry point)
 

@@ -94,8 +94,13 @@ class CriticVerdict(Strict):
     required_changes: list[str]
 
 
+class ApprovalDecision(StrEnum):
+    approved = "approved"
+    rejected = "rejected"
+
+
 class Approval(Strict):
     run_id: str
-    decision: str
+    decision: ApprovalDecision
     decided_by: str
     note: str = ""
