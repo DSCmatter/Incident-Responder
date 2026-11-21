@@ -12,66 +12,68 @@ Build order, free-tier budget, and gates for the incident responder. Companion d
 
 ## 2. Start here (first 90 minutes)
 
-- [ ] Create the repo; copy in the seven docs
-- [ ] T01: Makefile, config, `.env.example`, docker-compose with Postgres
-- [ ] Get a Gemini API key; read your real daily quota in AI Studio and write it in `config.yaml`
-- [ ] Install Ollama and pull a 7B to 8B instruct model that supports tool calling
-- [ ] Optional: OpenRouter key; pick 2 or 3 `:free` models
-- [ ] T03: smoke test "hello plus one tool call plus one structured output" on each backend; record which pass
+- [x] Create the repo; copy in the seven docs
+- [x] T01: Makefile, config, `.env.example`, docker-compose with Postgres
+- [ ] Get a Gemini API key; read your real daily quota in AI Studio and write it in `config.yaml` (not done: no key yet)
+- [x] Install Ollama and pull a 7B to 8B instruct model that supports tool calling
+- [x] Optional: OpenRouter key; pick 2 or 3 `:free` models (Nemotron Ultra, Nemotron Super, Ernie 5.5 Flash)
+- [x] T03: smoke test "hello plus one tool call plus one structured output" on each backend; record which pass
 
 ## 3. Ordered backlog
 
 Size: S under 2 hours, M half a day, L a day or more. Do tasks in order; a task needs the ones before it unless noted.
 
+**Status on 2026-11-21.** T01 to T07 are done. T03 chose the backends: local Ollama (qwen2.5:7b-instruct) is primary, OpenRouter (Nemotron Ultra) is the fallback, and Gemini is unused until a key exists. T08's agents run end to end, but the gate is not met: Nemotron Ultra found S01's root cause in 61.2 s against the 60 s cap, and local qwen2.5:7b on a GTX 1650 timed out on S02 and S03 after 3 calls. Passing needs a faster backend, a higher `run_timeout_seconds`, or context trimming (T21) moved earlier. T09 onward waits on that decision.
+
 ### Week 1: foundation
 
-| ID | Task | Size | Done when |
-| --- | --- | --- | --- |
-| T01 | Repo tooling: Makefile, ruff, pytest, config, docker-compose | S | `make setup`, `make lint`, `make test` run |
-| T02 | `llm/client.py`: cache, daily budget, fallback chain, record and replay modes, per-call log | M | Same call twice costs one live call; budget switch tested with a stub |
-| T03 | Backend smoke tests: tool calling and structured output on Gemini, OpenRouter free, Ollama | S | Table of which backends pass; primary chosen by the decision rule in section 4 |
-| T04 | Pydantic schemas and evidence store from DESIGN.md | S | Schemas validate sample payloads; store enforces "cite only existing ids" |
-| T05 | Fixture generator and S01 to S03 fixtures | M | Three incidents with logs, metrics, deploys, truth; manually solvable |
-| T06 | Read-only tools over fixtures (logs, metrics, deploys, diffs) | M | Tools return evidence-id-tagged results |
-| T07 | Eval harness skeleton: loader, scoring per SCENARIOS.md, JSON results | M | `make eval SPLIT=dev` runs a stub agent and prints a score table |
-| T08 | Triage and diagnosis (ReAct) agents, no RAG, no verifier | L | **Gate: solves S01 to S03 end to end** |
+| ID | Task | Size | Done when | Status |
+| --- | --- | --- | --- | --- |
+| T01 | Repo tooling: Makefile, ruff, pytest, config, docker-compose | S | `make setup`, `make lint`, `make test` run | Done |
+| T02 | `llm/client.py`: cache, daily budget, fallback chain, record and replay modes, per-call log | M | Same call twice costs one live call; budget switch tested with a stub | Done |
+| T03 | Backend smoke tests: tool calling and structured output on Gemini, OpenRouter free, Ollama | S | Table of which backends pass; primary chosen by the decision rule in section 4 | Done (see RESULTS.md) |
+| T04 | Pydantic schemas and evidence store from DESIGN.md | S | Schemas validate sample payloads; store enforces "cite only existing ids" | Done |
+| T05 | Fixture generator and S01 to S03 fixtures | M | Three incidents with logs, metrics, deploys, truth; manually solvable | Done |
+| T06 | Read-only tools over fixtures (logs, metrics, deploys, diffs) | M | Tools return evidence-id-tagged results | Done |
+| T07 | Eval harness skeleton: loader, scoring per SCENARIOS.md, JSON results | M | `make eval SPLIT=dev` runs a stub agent and prints a score table | Done |
+| T08 | Triage and diagnosis (ReAct) agents, no RAG, no verifier | L | **Gate: solves S01 to S03 end to end** | Built; **gate not met** (60 s cap, see status note above) |
 
 ### Week 2: fix path and baseline
 
-| ID | Task | Size | Done when |
-| --- | --- | --- | --- |
-| T09 | Fix agent, write tools (dry-run), approval gate, persisted run state | M | A run pauses at `AWAITING_APPROVAL` and resumes after approval |
-| T10 | Supervisor (fixed routing for now) and `make run INCIDENT=...` CLI | M | One command prints the report |
-| T11 | Fixtures for the rest of dev: S04 to S08, H1, H3 | M | 10 dev incidents, each manually checked |
-| T12 | **Baseline eval:** dev set, 3 repeats, plain loop | S | **Gate: baseline numbers in RESULTS.md** |
+| ID | Task | Size | Done when | Status |
+| --- | --- | --- | --- | --- |
+| T09 | Fix agent, write tools (dry-run), approval gate, persisted run state | M | A run pauses at `AWAITING_APPROVAL` and resumes after approval | Not started |
+| T10 | Supervisor (fixed routing for now) and `make run INCIDENT=...` CLI | M | One command prints the report | Not started |
+| T11 | Fixtures for the rest of dev: S04 to S08, H1, H3 | M | 10 dev incidents, each manually checked | Not started |
+| T12 | **Baseline eval:** dev set, 3 repeats, plain loop | S | **Gate: baseline numbers in RESULTS.md** | Not started |
 
 ### Week 3: the capabilities
 
-| ID | Task | Size | Done when |
-| --- | --- | --- | --- |
-| T13 | RAG: runbooks and postmortems corpus, ingest, hybrid search, `search_runbooks` tool, recall@k check | L | Right runbook in top 5 for most dev incidents; own postmortem excluded on replay |
-| T14 | Evidence verifier as a tool (code checks, then model check) | M | Fabricated quote rejected in a unit test; claims without ids rejected |
-| T15 | Critic and the fix loop with exit conditions | M | Loop stops on approval or after 2 rounds, then escalates |
-| T16 | Supervisor dynamic routing (fast path vs full diagnosis) | S | Known-runbook incidents use fewer calls |
-| T17 | Heldout fixtures: remaining 16 variants and H2, H4, H5, H6 | L | 30 incidents total; do not tune on heldout |
-| T18 | Ablation runs: no RAG, no verifier, 1 vs 2 critic rounds | M | **Gate: ablation table in RESULTS.md** |
+| ID | Task | Size | Done when | Status |
+| --- | --- | --- | --- | --- |
+| T13 | RAG: runbooks and postmortems corpus, ingest, hybrid search, `search_runbooks` tool, recall@k check | L | Right runbook in top 5 for most dev incidents; own postmortem excluded on replay | Not started |
+| T14 | Evidence verifier as a tool (code checks, then model check) | M | Fabricated quote rejected in a unit test; claims without ids rejected | Not started |
+| T15 | Critic and the fix loop with exit conditions | M | Loop stops on approval or after 2 rounds, then escalates | Not started |
+| T16 | Supervisor dynamic routing (fast path vs full diagnosis) | S | Known-runbook incidents use fewer calls | Not started |
+| T17 | Heldout fixtures: remaining 16 variants and H2, H4, H5, H6 | L | 30 incidents total; do not tune on heldout | Not started |
+| T18 | Ablation runs: no RAG, no verifier, 1 vs 2 critic rounds | M | **Gate: ablation table in RESULTS.md** | Not started |
 
 ### Week 4: observability and safety
 
-| ID | Task | Size | Done when |
-| --- | --- | --- | --- |
-| T19 | OpenTelemetry spans and cost-equivalent accounting; local trace UI | M | Trace shows agents, tools, tokens, tokens per second, cost |
-| T20 | Guard layer: allowlists, validation, output scanning, approval check; injection test | M | H3 passes; unapproved write call is refused in a test |
-| T21 | Optimization experiments: model routing, context trimming, tool-result caching | M | **Gate: before and after cost and latency table** |
-| T22 | CI: lint, tests, replay-mode eval on a small subset, accuracy regression gate | S | CI fails if accuracy drops below the recorded baseline |
+| ID | Task | Size | Done when | Status |
+| --- | --- | --- | --- | --- |
+| T19 | OpenTelemetry spans and cost-equivalent accounting; local trace UI | M | Trace shows agents, tools, tokens, tokens per second, cost | Not started |
+| T20 | Guard layer: allowlists, validation, output scanning, approval check; injection test | M | H3 passes; unapproved write call is refused in a test | Not started |
+| T21 | Optimization experiments: model routing, context trimming, tool-result caching | M | **Gate: before and after cost and latency table** | Not started |
+| T22 | CI: lint, tests, replay-mode eval on a small subset, accuracy regression gate | S | CI fails if accuracy drops below the recorded baseline | Not started |
 
 ### Week 5: ship
 
-| ID | Task | Size | Done when |
-| --- | --- | --- | --- |
-| T23 | README, architecture diagram, RESULTS.md final, failure analysis | M | Someone else runs it from the README in 10 minutes |
-| T24 | Demo video per DEMO.md | S | 2 minutes, no secrets visible |
-| T25 | Optional: Cloud Run deploy with budget alert | M | Only if you have a billing account and want it |
+| ID | Task | Size | Done when | Status |
+| --- | --- | --- | --- | --- |
+| T23 | README, architecture diagram, RESULTS.md final, failure analysis | M | Someone else runs it from the README in 10 minutes | Not started |
+| T24 | Demo video per DEMO.md | S | 2 minutes, no secrets visible | Not started |
+| T25 | Optional: Cloud Run deploy with budget alert | M | Only if you have a billing account and want it | Not started |
 
 ## 4. Free-tier ground rules
 

@@ -6,6 +6,10 @@ A multi-agent cloud incident responder built on Google ADK. It triages an alert,
 
 <!-- TODO: demo GIF or video link -->
 
+## Status
+
+Work in progress. Done: repo tooling, the LLM client, backend smoke tests, schemas and the evidence store, fixtures S01 to S03, read-only tools, and the eval harness (T01 to T07). Built but not yet past its gate: the triage and diagnosis agents (T08), which find the right root cause but exceed the 60-second per-incident limit on today's free backends. Not started: the fix path, supervisor, RAG, verifier, critic, guard layer and telemetry. Task-by-task status is in [PLAN.md](PLAN.md#3-ordered-backlog).
+
 ## Why
 
 On-call engineers lose time collecting evidence and second-guessing fixes. This project shows an agent system that cites its evidence, rejects its own unsupported claims, and stays inside safe limits.
