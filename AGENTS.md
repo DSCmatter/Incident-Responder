@@ -19,7 +19,7 @@ A multi-agent cloud incident responder built on Google ADK and evaluated on repl
 
 ## Stack
 
-Python 3.11 or newer, Google ADK, Pydantic, SQLite (Postgres with pgvector for RAG), OpenTelemetry, pytest, ruff. Local Postgres runs via docker-compose. Verify library APIs against current docs; do not guess method names.
+Python 3.11 or newer, Google ADK, Pydantic, SQLite (run state, and the RAG index with FTS5 plus stored vectors), local sentence-transformers for embeddings, OpenTelemetry, pytest, ruff. docker-compose still defines Postgres, but nothing uses it while Docker is absent (see `docs/DESIGN.md` section 4). Verify library APIs against current docs; do not guess method names.
 
 ## Commands
 
@@ -34,6 +34,8 @@ Keep these targets working; add them to the Makefile as you build.
 | `make run INCIDENT=S01` | Run one incident, print the report |
 | `make approve RUN=<run id> BY=<name>` | Approve a paused run's fix; it executes on the demo stack through the guard |
 | `make reject RUN=<run id> BY=<name>` | Reject a paused run's fix; nothing executes |
+| `make ingest` | Build or refresh the runbook index in `.state/rag.db` (no-op when the corpus is unchanged) |
+| `make rag-recall SPLIT=dev` | Check that a relevant runbook is in the top 5 for each incident |
 | `make eval SPLIT=dev` | Run the eval harness on a split, write `evals/results/*.json` |
 | `make trace` | Open the local trace UI |
 

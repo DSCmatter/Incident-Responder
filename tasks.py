@@ -34,7 +34,7 @@ def setup(_: argparse.Namespace) -> int:
 
 def up(_: argparse.Namespace) -> int:
     if not shutil.which("docker"):
-        print("docker not found. Postgres is only needed for RAG (week 3); week 1 runs without it.")
+        print("docker not found. Nothing needs Postgres yet; the RAG index lives in SQLite.")
         return 1
     return _run(["docker", "compose", "up", "-d"])
 
@@ -90,6 +90,24 @@ def decide_run(args: argparse.Namespace) -> int:
     return cli_main([*argv, "--note", args.note] if args.note else argv)
 
 
+def ingest(_: argparse.Namespace) -> int:
+    from config import load_settings
+    from rag.embed import SentenceTransformerEmbedder
+    from rag.index import INDEX_PATH, ensure_index
+
+    embedder = SentenceTransformerEmbedder(load_settings().rag.embedding)
+    built = ensure_index(embedder)
+    state = "built" if built else "already up to date"
+    print(f"runbook index {state}: {INDEX_PATH.relative_to(ROOT).as_posix()} ({embedder.name})")
+    return 0
+
+
+def rag_recall(args: argparse.Namespace) -> int:
+    from rag.recall import main as recall_main
+
+    return recall_main(split=args.split)
+
+
 def trace(_: argparse.Namespace) -> int:
     print("Tracing lands in T19 (week 4). Nothing to open yet.")
     return 0
@@ -135,6 +153,12 @@ def build_parser() -> argparse.ArgumentParser:
         p.add_argument("--by", required=True)
         p.add_argument("--note", default="")
         p.set_defaults(func=decide_run)
+
+    sub.add_parser("ingest").set_defaults(func=ingest)
+
+    p = sub.add_parser("rag-recall")
+    p.add_argument("--split", default="dev", choices=["dev", "heldout"])
+    p.set_defaults(func=rag_recall)
 
     sub.add_parser("trace").set_defaults(func=trace)
     return parser

@@ -11,10 +11,16 @@ from agents.prompt import load_prompt
 from agents.schemas import Findings, Triage
 from demo_env.models import Alert
 from llm.client import LlmClient
-from tools.read_only import ToolSession
+from tools.read_only import ToolSession, available_tools
 
 PROMPT = load_prompt("diagnosis")
-TOOL_NAMES = ("list_recent_deploys", "query_logs", "query_metrics", "get_deploy_diff")
+TOOL_NAMES = (
+    "list_recent_deploys",
+    "query_logs",
+    "query_metrics",
+    "get_deploy_diff",
+    "search_runbooks",
+)
 WINDOW_BEFORE = timedelta(hours=2)
 WINDOW_AFTER = timedelta(minutes=15)
 
@@ -46,7 +52,10 @@ def build_diagnosis(
             model="llm-client", client=client, agent="diagnosis", prompt_version=PROMPT.version
         ),
         instruction=lambda _context: PROMPT.text,
-        tools=[*(EvidenceTool(name, session) for name in TOOL_NAMES), submit],
+        tools=[
+            *(EvidenceTool(name, session) for name in available_tools(session, TOOL_NAMES)),
+            submit,
+        ],
     )
     return agent, submit
 

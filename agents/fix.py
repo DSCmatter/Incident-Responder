@@ -8,10 +8,11 @@ from agents.adk import ClientModel, EvidenceTool, SubmitTool
 from agents.prompt import load_prompt
 from agents.schemas import Findings, FixClass, FixProposal
 from llm.client import LlmClient
-from tools.read_only import ToolSession
+from tools.read_only import ToolSession, available_tools
 from tools.write import WRITE_TOOLS, proposal_problems
 
 PROMPT = load_prompt("fix")
+TOOL_NAMES = ("get_deploy_diff", "search_runbooks")
 
 
 def build_fix(
@@ -40,7 +41,10 @@ def build_fix(
             model="llm-client", client=client, agent="fix", prompt_version=PROMPT.version
         ),
         instruction=lambda _context: PROMPT.text,
-        tools=[EvidenceTool("get_deploy_diff", session), submit],
+        tools=[
+            *(EvidenceTool(name, session) for name in available_tools(session, TOOL_NAMES)),
+            submit,
+        ],
     )
     return agent, submit
 

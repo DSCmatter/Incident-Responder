@@ -12,6 +12,7 @@ from pathlib import Path
 
 from config import (
     BackendConfig,
+    Features,
     Limits,
     LlmSettings,
     Mode,
@@ -74,6 +75,7 @@ def settings_for(
     pricing: dict[str, ModelPrice] | None = None,
     fallbacks: dict[str, list[str]] | None = None,
     gemini_key_env: str | None = None,
+    rag: bool = False,
 ) -> Settings:
     fallbacks = fallbacks or {}
     backends = {
@@ -108,6 +110,7 @@ def settings_for(
             pricing=pricing or {},
         ),
         rag=RagSettings(k=5, embedding="local"),
+        features=Features(rag=rag),
     )
 
 

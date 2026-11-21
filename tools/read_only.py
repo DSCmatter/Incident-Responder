@@ -17,6 +17,7 @@ from pydantic import BaseModel, Field, ValidationError
 
 from demo_env.load import LoadedIncident
 from demo_env.models import MetricName
+from rag.index import RunbookIndex
 from tools.evidence import EvidenceItem, EvidenceKind, EvidenceStore
 
 
@@ -29,6 +30,7 @@ class ToolSession:
     run_id: str
     incident: LoadedIncident
     evidence: EvidenceStore
+    runbooks: RunbookIndex | None = None  # None when features.rag is off
 
     def require_service(self, service: str) -> str:
         known = self.incident.services
@@ -43,6 +45,7 @@ class ToolSpec:
     description: str
     args_model: type[BaseModel]
     run: Callable[[ToolSession, Any], EvidenceItem]
+    needs_runbooks: bool = False
 
     def parameters(self) -> dict[str, Any]:
         schema = self.args_model.model_json_schema()
@@ -226,6 +229,48 @@ def _get_deploy_diff(session: ToolSession, args: DeployDiffArgs) -> EvidenceItem
     return session.evidence.add(EvidenceKind.deploy, "deploys.json", body, args.model_dump_json())
 
 
+class SearchRunbooksArgs(BaseModel):
+    query: str = Field(
+        min_length=1, description="symptoms in plain words, such as the alert summary"
+    )
+    service: str | None = Field(
+        default=None, description="keep runbooks for this service plus the generic ones"
+    )
+    k: int = Field(default=5, ge=1, le=10)
+
+
+def _search_runbooks(session: ToolSession, args: SearchRunbooksArgs) -> EvidenceItem:
+    if session.runbooks is None:
+        raise ToolError("runbook search is not enabled for this run")
+    if args.service is not None:
+        session.require_service(args.service)
+    own_postmortem = session.incident.incident.postmortem_id
+    hits = session.runbooks.search(
+        args.query,
+        service=args.service,
+        k=args.k,
+        exclude=frozenset({own_postmortem}) if own_postmortem else frozenset(),
+    )
+    if not hits:
+        scope = f" for {args.service}" if args.service else ""
+        return session.evidence.add(
+            EvidenceKind.runbook,
+            "rag_corpus",
+            f"no runbook matched {args.query!r}{scope}",
+            args.model_dump_json(),
+        )
+    body = "\n\n".join(
+        f"{rank}. score={hit.score:.2f} {hit.doc_id} {hit.source}\n{hit.text}"
+        for rank, hit in enumerate(hits, start=1)
+    )
+    return session.evidence.add(
+        EvidenceKind.runbook,
+        ", ".join(hit.source for hit in hits),
+        body,
+        args.model_dump_json(),
+    )
+
+
 TOOLS: dict[str, ToolSpec] = {
     spec.name: spec
     for spec in (
@@ -259,8 +304,26 @@ TOOLS: dict[str, ToolSpec] = {
             args_model=DeployDiffArgs,
             run=_get_deploy_diff,
         ),
+        ToolSpec(
+            name="search_runbooks",
+            description=(
+                "Search runbooks and past postmortems by symptom. Returns the best matching "
+                "section of each document with its score (0 to 1), as one evidence item. "
+                "Runbooks are guidance; confirm what they suggest with logs, metrics or deploys."
+            ),
+            args_model=SearchRunbooksArgs,
+            run=_search_runbooks,
+            needs_runbooks=True,
+        ),
     )
 }
+
+
+def available_tools(session: ToolSession, names: tuple[str, ...]) -> list[str]:
+    """An agent's allowlist minus the tools this session cannot serve."""
+    return [
+        name for name in names if session.runbooks is not None or not TOOLS[name].needs_runbooks
+    ]
 
 
 def tool_schemas(names: list[str]) -> list[dict[str, Any]]:
