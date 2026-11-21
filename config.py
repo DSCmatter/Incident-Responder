@@ -23,9 +23,8 @@ class Mode(StrEnum):
     """How llm/client.py talks to backends."""
 
     live = "live"  # call the backend, cache the response
-    record = "record"  # same as live, but a cache hit is a bug
+    record = "record"  # never read the cache; always call and overwrite it
     replay = "replay"  # cache only; a miss is an error
-    stub = "stub"  # never call out; tests supply scripted responses
 
 
 class Limits(BaseModel):
@@ -76,11 +75,22 @@ class BackendConfig(BaseModel):
         return self.api_key_env is None or bool(self.api_key())
 
 
+class ModelPrice(BaseModel):
+    """Cost-equivalent per million tokens, so a free tier is still comparable."""
+
+    input_per_mtok: float = Field(ge=0.0)
+    output_per_mtok: float = Field(ge=0.0)
+
+
+ZERO_PRICE = ModelPrice(input_per_mtok=0.0, output_per_mtok=0.0)
+
+
 class LlmSettings(BaseModel):
     mode: Mode = Mode.live
     chain: list[str] = Field(min_length=1)
     daily_budget: dict[str, Budget]
     backends: dict[str, BackendConfig]
+    pricing: dict[str, ModelPrice] = Field(default_factory=dict)
 
     @model_validator(mode="after")
     def _chain_names_known_backends(self) -> LlmSettings:
@@ -110,6 +120,10 @@ class Settings(BaseModel):
     def usable_chain(self) -> list[str]:
         """Configured chain minus backends whose key env var is unset."""
         return [name for name in self.llm.chain if self.backend(name).is_configured()]
+
+    def price(self, model: str) -> ModelPrice:
+        """Unknown models price at zero, so a newly added free model never breaks a run."""
+        return self.llm.pricing.get(model, ZERO_PRICE)
 
 
 def load_env_file(path: Path = ENV_FILE) -> None:

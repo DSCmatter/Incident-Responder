@@ -36,3 +36,9 @@ ignore = ["E501"]
 
 [tool.ruff.lint.isort]
 known-first-party = ["agents", "evals", "guard", "llm", "rag", "state", "telemetry", "tools", "config"]
+
+[tool.ruff.lint.flake8-tidy-imports.banned-api]
+"google.genai".msg = "provider SDKs stay out of this repo; llm/transport.py is the only HTTP client"
+"openai".msg = "provider SDKs stay out of this repo; llm/transport.py is the only HTTP client"
+"anthropic".msg = "provider SDKs stay out of this repo; llm/transport.py is the only HTTP client"
+"litellm".msg = "provider SDKs stay out of this repo; llm/transport.py is the only HTTP client"

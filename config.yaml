@@ -16,6 +16,14 @@ llm:
     gemini: 200
     openrouter: 45
     ollama: unlimited
+  # Cost-equivalent per million tokens. Free tiers are listed at zero so every
+  # optimisation row is comparable even when no invoice exists.
+  pricing:
+    gemini-2.5-flash: { input_per_mtok: 0.30, output_per_mtok: 2.50 }
+    google/gemini-2.5-flash-preview:free: { input_per_mtok: 0.0, output_per_mtok: 0.0 }
+    meta-llama/llama-3.3-70b-instruct:free: { input_per_mtok: 0.0, output_per_mtok: 0.0 }
+    qwen/qwen3-30b-a3b:free: { input_per_mtok: 0.0, output_per_mtok: 0.0 }
+    qwen2.5:7b-instruct: { input_per_mtok: 0.0, output_per_mtok: 0.0 }
   backends:
     gemini:
       dialect: gemini
