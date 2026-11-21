@@ -25,6 +25,8 @@ Size: S under 2 hours, M half a day, L a day or more. Do tasks in order; a task 
 
 **Status on 2026-11-21.** T01 to T07 are done. T03 chose the backends: local Ollama (qwen2.5:7b-instruct) is primary, OpenRouter (Nemotron Ultra) is the fallback, and Gemini is unused until a key exists. T08's agents run end to end, but the gate is not met: Nemotron Ultra found S01's root cause in 61.2 s against the 60 s cap, and local qwen2.5:7b on a GTX 1650 timed out on S02 and S03 after 3 calls. T09 to T11 have since been built, but the T12 baseline gate remains open; resolve the latency issue before treating end-to-end accuracy or the baseline as passed.
 
+**Week 3 status on 2026-11-22 (branch `week3`, stopped mid-task).** T13 and T17 were started in parallel and stopped on request; both are partial, as the rows below say. T14, T15, T16 and T18 are not started. Decisions taken: the RAG index uses SQLite (FTS5 plus MiniLM vectors) because Docker is not installed, and T18 builds the ablation switches and proves them in replay but defers the live runs, since Ollama is stopped, OpenRouter allows 45 calls a day, and the baseline scores 0.000.
+
 ### Week 1: foundation
 
 | ID | Task | Size | Done when | Status |
@@ -51,11 +53,11 @@ Size: S under 2 hours, M half a day, L a day or more. Do tasks in order; a task 
 
 | ID | Task | Size | Done when | Status |
 | --- | --- | --- | --- | --- |
-| T13 | RAG: runbooks and postmortems corpus, ingest, hybrid search, `search_runbooks` tool, recall@k check | L | Right runbook in top 5 for most dev incidents; own postmortem excluded on replay | Not started |
+| T13 | RAG: runbooks and postmortems corpus, ingest, hybrid search, `search_runbooks` tool, recall@k check | L | Right runbook in top 5 for most dev incidents; own postmortem excluded on replay | Partial: `rag/` index and search, `search_runbooks` wired into diagnosis and fix, `features.rag` switch, `make ingest` and `make rag-recall`, 30 runbooks, 8 dev postmortems, `relevance/dev.yaml`. Missing: unit tests for exclusion, service filter and idempotent rebuild; the recall@k run has not been executed, so the gate is unmeasured |
 | T14 | Evidence verifier as a tool (code checks, then model check) | M | Fabricated quote rejected in a unit test; claims without ids rejected | Not started |
 | T15 | Critic and the fix loop with exit conditions | M | Loop stops on approval or after 2 rounds, then escalates | Not started |
 | T16 | Supervisor dynamic routing (fast path vs full diagnosis) | S | Known-runbook incidents use fewer calls | Not started |
-| T17 | Heldout fixtures: remaining 16 variants and H2, H4, H5, H6 | L | 30 incidents total; do not tune on heldout | Not started |
+| T17 | Heldout fixtures: remaining 16 variants and H2, H4, H5, H6 | L | 30 incidents total; do not tune on heldout | Partial: shared helpers in `demo_env/faults/base.py` and unregistered builder drafts (`heldout_families.py`, `heldout_variants.py`). No heldout fixture, postmortem or `relevance/heldout.yaml` generated yet; still 10 incidents |
 | T18 | Ablation runs: no RAG, no verifier, 1 vs 2 critic rounds | M | **Gate: ablation table in RESULTS.md** | Not started |
 
 ### Week 4: observability and safety
@@ -84,8 +86,8 @@ Checked 2026-11-18. Limits change often; re-read your AI Studio console each wee
 | Gemini API (AI Studio) | Not fixed. One 2026 source lists 20 requests/day for Flash models and 500/day for Flash-Lite; Google does not publish per-model numbers, so read yours in the console | Primary only if quota is 250/day or more |
 | OpenRouter free models | 20 requests/minute; 50/day (1,000/day only after buying $10 of credits, which is not free). Per account, not per model | Second fallback; test tool calling per model |
 | Ollama (local) | Free, limited by your laptop | Dev loop, bulk evals, last fallback |
-| Embeddings | Local sentence-transformers | Keeps embeddings off API quota |
-| Postgres and pgvector | Local Docker | Default |
+| Embeddings | Local sentence-transformers (`all-MiniLM-L6-v2`) | Keeps embeddings off API quota |
+| RAG index | SQLite FTS5 plus stored vectors | Replaces Postgres and pgvector while Docker is not installed |
 | Tracing | Local Jaeger or self-hosted Langfuse | No hosted account |
 | CI | GitHub Actions, free for public repos | Replay mode only |
 | Cloud Run | 2M requests, 180k vCPU-seconds, 360k GiB-seconds per month; needs a billing account | Optional last step |
@@ -135,7 +137,7 @@ Rough LoC: about 4,000 Python for the full plan; about 2,500 if you stop after w
 Resume bullets, once numbers exist (fill only from measured runs):
 
 - Built a multi-agent incident responder on Google ADK (coordinator, ReAct diagnosis, evidence verifier as a tool, fix and critic loop) with human-approval gating; X% root-cause accuracy on Y replayed incidents.
-- Added hybrid RAG (pgvector plus full-text) over runbooks and past incidents, lifting accuracy from A% to B% in ablation.
+- Added hybrid RAG (dense vectors plus full-text) over runbooks and past incidents, lifting accuracy from A% to B% in ablation.
 - Instrumented agents with OpenTelemetry; cut cost per incident by C% and p95 latency by D% through model routing and context trimming, entirely on free tiers.
 
 ## Sources (checked 2026-11-18)

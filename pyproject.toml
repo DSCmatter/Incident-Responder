@@ -6,8 +6,10 @@ requires-python = ">=3.11"
 dependencies = [
     "google-adk>=2.14,<3",
     "httpx>=0.27,<1",
+    "numpy>=2,<3",
     "pydantic>=2.12,<3",
     "pyyaml>=6,<7",
+    "sentence-transformers>=5,<6",
 ]
 
 [dependency-groups]
@@ -28,7 +30,7 @@ markers = ["live: calls a real model backend (never runs in CI or on bare `make 
 [tool.ruff]
 line-length = 100
 target-version = "py311"
-extend-exclude = ["docs/**", "*.md"]
+extend-exclude = ["docs/**", "*.md", ".claude"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM", "RUF", "TID251"]

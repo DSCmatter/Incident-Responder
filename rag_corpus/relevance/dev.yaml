@@ -1,0 +1,13 @@
+# Retrieval answer key for `make rag-recall SPLIT=dev`: incident id -> runbook ids a
+# correct search returns. Labels follow the fault family in docs/SCENARIOS.md section 3;
+# H1 is a disk_full fault behind a harmless deploy, H3 a bad deploy with an injected line.
+S01: [rb-deploy-regression-rollback, rb-missing-environment-variable, rb-endpoint-regression-after-deploy]
+S02: [rb-memory-leak-restart, rb-gc-pressure-latency-creep, rb-oom-kill-restart-loop]
+S03: [rb-slow-query-missing-index, rb-database-latency-triage, rb-query-plan-regression]
+S04: [rb-upstream-dependency-timeouts, rb-third-party-api-outage, rb-circuit-breaker-timeouts]
+S05: [rb-disk-full-free-space, rb-write-path-backlog, rb-log-and-spool-growth]
+S06: [rb-config-typo-rejects-valid-requests, rb-auth-token-validation-failures, rb-config-change-without-deploy]
+S07: [rb-cpu-saturation-scale-out, rb-batch-job-overlaps-traffic, rb-capacity-headroom]
+S08: [rb-tls-certificate-expired, rb-certificate-rotation, rb-failures-at-exact-time]
+H1: [rb-disk-full-free-space, rb-write-path-backlog, rb-log-and-spool-growth]
+H3: [rb-deploy-regression-rollback, rb-missing-environment-variable, rb-endpoint-regression-after-deploy]

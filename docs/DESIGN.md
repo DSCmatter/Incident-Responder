@@ -124,7 +124,13 @@ Read-only (any delegated agent may call, subject to guard allowlist):
 | `query_metrics` | `(service, metric, start, end, step)` | summarized series (min, max, trend, spikes) as one evidence item |
 | `list_recent_deploys` | `(service=None, hours=24)` | deploy records with ids and times |
 | `get_deploy_diff` | `(deploy_id)` | changed files or config keys |
-| `search_runbooks` | `(query, service=None, k=5)` | top chunks with source and score |
+| `search_runbooks` | `(query, service=None, k=5)` | top chunks with source and score, as one `runbook` evidence item; always excludes the incident's own `postmortem_id` |
+
+### Runbook index (T13)
+
+Corpus: `rag_corpus/runbooks/<slug>.md` and `rag_corpus/postmortems/<postmortem_id>.md`, each with YAML front matter (`id`, `title`, `root_causes` or `root_cause`, `services`; postmortems add `incident`). One chunk per `## ` section, prefixed with the doc title; front matter never enters chunk text. `rag_corpus/relevance/<split>.yaml` maps incident ids to the runbook ids a correct search returns; it is the recall answer key and is not indexed.
+
+Index: SQLite at `.state/rag.db` (`rag/index.py`). Postgres with pgvector was the plan, but Docker is not installed on the dev machine, and the corpus is about a hundred chunks, so SQLite holds both sides: FTS5 bm25 for lexical, and float32 vectors from local sentence-transformers `all-MiniLM-L6-v2` for dense, scored by brute-force cosine. Results are ordered by reciprocal rank fusion (k=60) of the two rankings. Each hit's `score` is its dense cosine clamped to [0, 1], so routing can compare the top hit to `routing.runbook_score_threshold`. `service` keeps chunks tagged with that service plus generic ones. A build is idempotent: it reruns only when the corpus hash or embedder name changes, and it writes a temp file renamed into place. Tests inject a stub embedder; `sentence_transformers` is imported only by the real one.
 
 Write tools (dry-run by default; execute only after an `Approval` record exists):
 
@@ -150,7 +156,7 @@ Write tools take effect only on the fake demo stack. The guard layer refuses any
 | Triage | delegated | alert payload, service map | `Triage` | one call |
 | Diagnosis | delegated, ReAct | read-only tools, `search_runbooks`, verifier (as tool) | `Findings` | all claims verified, or 6 steps |
 | Evidence verifier | tool | evidence store (read-only) | `Verification` | one call |
-| Fix | delegated, in loop | `get_deploy_diff`, `search_runbooks` (T13) | `FixProposal` | one answer, max 3 calls |
+| Fix | delegated, in loop | `get_deploy_diff`, `search_runbooks` | `FixProposal` | one answer, max 3 calls |
 | Critic | in loop | evidence store, findings | `CriticVerdict` | approve or round limit |
 
 ADK wiring: every agent is an ADK `LlmAgent` whose model is `ClientModel` in `agents/adk.py`, so each call still goes through `llm/client.py`. That module is the only one allowed to import `google.genai` types (ruff TID251 enforces it). An agent answers only by calling its `submit_<schema>` tool. The tool validates the arguments against the schema plus agent checks (known service, cited ids exist in the store), returns the reason on a rejection, and ends the agent on the second rejection with no result, which the run reports as `FAILED`. Prompts live in `agents/prompts/<agent>.md` and start with `version: <id>`, which is logged with every call.
@@ -229,8 +235,12 @@ llm:
   daily_budget: {gemini: 200, openrouter: 45, ollama: unlimited}
 rag:
   k: 5
-  embedding: local-sentence-transformers
+  embedding: sentence-transformers/all-MiniLM-L6-v2   # local, CPU; downloaded once
+features:
+  rag: true                         # false: no index is built and no agent gets search_runbooks
 ```
+
+`features` holds the capability switches the T18 ablations turn off; T14 adds `verifier` to it.
 
 ## 11. Failure handling
 

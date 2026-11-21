@@ -50,4 +50,8 @@ llm:
 
 rag:
   k: 5
-  embedding: local-sentence-transformers
+  embedding: sentence-transformers/all-MiniLM-L6-v2 # local, CPU; downloaded once
+
+# Capability switches; each off-row is an ablation in docs/RESULTS.md.
+features:
+  rag: true # false: no runbook index, and no search_runbooks tool for any agent

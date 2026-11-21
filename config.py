@@ -105,7 +105,13 @@ class LlmSettings(BaseModel):
 
 class RagSettings(BaseModel):
     k: int = Field(gt=0)
-    embedding: str
+    embedding: str  # sentence-transformers model name
+
+
+class Features(BaseModel):
+    """Capability switches for ablation runs (PLAN.md T18). Off means never built."""
+
+    rag: bool
 
 
 class Settings(BaseModel):
@@ -113,6 +119,7 @@ class Settings(BaseModel):
     routing: Routing
     llm: LlmSettings
     rag: RagSettings
+    features: Features
 
     def backend(self, name: str) -> BackendConfig:
         return self.llm.backends[name]

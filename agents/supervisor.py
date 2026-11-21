@@ -32,6 +32,8 @@ from llm.client import LlmClient
 from llm.errors import CallCapReached, LlmError
 from llm.ledger import CallStatus, Ledger
 from llm.transport import Transport
+from rag.embed import SentenceTransformerEmbedder
+from rag.index import RunbookIndex, load_index
 from state.states import RunState
 from state.store import RunStore
 from tools.evidence import EvidenceStore
@@ -52,11 +54,13 @@ class Supervisor:
         ledger: Ledger | None = None,
         transport: Transport | None = None,
         runs: RunStore | None = None,
+        runbooks: RunbookIndex | None = None,
     ) -> None:
         self.settings = settings or load_settings()
         self.ledger = ledger
         self.transport = transport
         self.runs = runs or RunStore()
+        self.runbooks = _runbooks(self.settings, runbooks)
 
     def run(self, incident: LoadedIncident) -> RunReport:
         return asyncio.run(self.run_async(incident))
@@ -71,7 +75,9 @@ class Supervisor:
             ledger=self.ledger,
             transport=self.transport,
         )
-        session = ToolSession(run_id=run_id, incident=incident, evidence=EvidenceStore())
+        session = ToolSession(
+            run_id=run_id, incident=incident, evidence=EvidenceStore(), runbooks=self.runbooks
+        )
         self.runs.create(run_id, incident_id)
         started = time.perf_counter()
         try:
@@ -160,6 +166,15 @@ class Supervisor:
 
     def _stop(self, run_id: str, state: RunState, reason: str) -> None:
         self.runs.advance(run_id, state, stop_reason=reason)
+
+
+def _runbooks(settings: Settings, given: RunbookIndex | None) -> RunbookIndex | None:
+    """The index every run shares; built or refreshed once per supervisor, never when RAG is off."""
+    if not settings.features.rag:
+        return None
+    if given is not None:
+        return given
+    return load_index(SentenceTransformerEmbedder(settings.rag.embedding))
 
 
 def decide(runs: RunStore, approval: Approval) -> RunReport:

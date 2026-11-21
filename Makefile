@@ -7,7 +7,7 @@ RUN ?=
 BY ?=
 NOTE ?=
 
-.PHONY: setup up down lint fmt test smoke eval run approve reject trace
+.PHONY: setup up down lint fmt test smoke eval run approve reject ingest rag-recall trace
 
 setup:
 	$(PY) tasks.py setup
@@ -41,6 +41,12 @@ approve:
 
 reject:
 	$(PY) tasks.py reject --run-id "$(RUN)" --by "$(BY)" --note "$(NOTE)"
+
+ingest:
+	$(PY) tasks.py ingest
+
+rag-recall:
+	$(PY) tasks.py rag-recall --split $(SPLIT)
 
 trace:
 	$(PY) tasks.py trace
