@@ -21,7 +21,14 @@ from dataclasses import dataclass
 from config import Mode, Settings
 from llm.dialects import parse as parse_reply
 from llm.dialects import render as render_request
-from llm.errors import LlmError, LlmUnavailable, ProviderError, QuotaExhausted, ReplayMiss
+from llm.errors import (
+    CallCapReached,
+    LlmError,
+    LlmUnavailable,
+    ProviderError,
+    QuotaExhausted,
+    ReplayMiss,
+)
 from llm.ledger import CallStatus, Ledger
 from llm.transport import HttpxTransport, Transport
 from llm.turn import (
@@ -89,6 +96,9 @@ class LlmClient:
         return self.ledger.turns(self.run_id)
 
     def complete(self, call: ModelCall) -> Completion:
+        cap = self.settings.limits.max_llm_calls_per_run
+        if self.turns() >= cap:
+            raise CallCapReached(run_id=self.run_id, cap=cap)
         mode = self.settings.llm.mode
         key = cache_key(call)
         if mode is not Mode.record:

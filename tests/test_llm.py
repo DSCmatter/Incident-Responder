@@ -16,7 +16,14 @@ from config import (
     ModelPrice,
 )
 from llm.client import Completion, cache_key
-from llm.errors import LlmError, LlmUnavailable, ProviderError, QuotaExhausted, ReplayMiss
+from llm.errors import (
+    CallCapReached,
+    LlmError,
+    LlmUnavailable,
+    ProviderError,
+    QuotaExhausted,
+    ReplayMiss,
+)
 from llm.ledger import CallStatus
 from llm.transport import HttpRequest, HttpxTransport
 from llm.turn import (
@@ -377,5 +384,22 @@ def test_completion_exposes_the_winning_backend(tmp_path: Path) -> None:
         assert result.reply.usage == Usage(
             input_tokens=1000, output_tokens=500, cached_input_tokens=0
         )
+    finally:
+        client.close()
+
+
+def test_a_run_stops_at_its_call_cap_before_calling_out(tmp_path: Path) -> None:
+    settings = settings_for()
+    capped = settings.model_copy(
+        update={"limits": settings.limits.model_copy(update={"max_llm_calls_per_run": 2})}
+    )
+    transport = StubTransport(GEMINI_REPLY, GEMINI_REPLY)
+    client = client_for(tmp_path, capped, transport)
+    try:
+        client.complete(ask("first"))
+        client.complete(ask("second"))
+        with pytest.raises(CallCapReached):
+            client.complete(ask("third"))
+        assert len(transport.requests) == 2
     finally:
         client.close()

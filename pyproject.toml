@@ -42,3 +42,8 @@ known-first-party = ["agents", "evals", "guard", "llm", "rag", "state", "telemet
 "openai".msg = "provider SDKs stay out of this repo; llm/transport.py is the only HTTP client"
 "anthropic".msg = "provider SDKs stay out of this repo; llm/transport.py is the only HTTP client"
 "litellm".msg = "provider SDKs stay out of this repo; llm/transport.py is the only HTTP client"
+
+[tool.ruff.lint.per-file-ignores]
+# ADK's model and tool interfaces are written in google.genai types; this module
+# is the one adapter, and it reaches the network only through LlmClient.
+"agents/adk.py" = ["TID251"]

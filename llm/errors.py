@@ -60,3 +60,11 @@ class LlmUnavailable(LlmError):
     def __init__(self, *, attempts: list[str]) -> None:
         self.attempts = attempts
         super().__init__("no backend answered: " + "; ".join(attempts))
+
+
+class CallCapReached(LlmError):
+    """The run has used `limits.max_llm_calls_per_run`; the caller escalates, never guesses."""
+
+    def __init__(self, *, run_id: str, cap: int) -> None:
+        self.cap = cap
+        super().__init__(f"run {run_id} reached its cap of {cap} model calls")

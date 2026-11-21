@@ -7,6 +7,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Protocol
 
+from agents.pipeline import ReactRunner
 from agents.report import RunReport
 from demo_env.load import LoadedIncident, load_split
 from evals.aggregate import Aggregate, aggregate
@@ -22,7 +23,7 @@ class Runner(Protocol):
     def run(self, incident: LoadedIncident) -> RunReport: ...
 
 
-RUNNERS: dict[str, type[Runner]] = {"stub": StubRunner}
+RUNNERS: dict[str, type[Runner]] = {"stub": StubRunner, "react": ReactRunner}
 
 
 def _runner_for(agent: str) -> Runner:

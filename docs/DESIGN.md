@@ -146,6 +146,8 @@ Write tools take effect only on the fake demo stack. The guard layer refuses any
 | Fix | delegated, in loop | `get_deploy_diff`, `search_runbooks` | `FixProposal` | per loop round |
 | Critic | in loop | evidence store, findings | `CriticVerdict` | approve or round limit |
 
+ADK wiring: every agent is an ADK `LlmAgent` whose model is `ClientModel` in `agents/adk.py`, so each call still goes through `llm/client.py`. That module is the only one allowed to import `google.genai` types (ruff TID251 enforces it). An agent answers only by calling its `submit_<schema>` tool. The tool validates the arguments against the schema plus agent checks (known service, cited ids exist in the store), returns the reason on a rejection, and ends the agent on the second rejection with no result, which the run reports as `FAILED`. Prompts live in `agents/prompts/<agent>.md` and start with `version: <id>`, which is logged with every call.
+
 ### Supervisor routing
 
 1. Run Triage.
@@ -185,6 +187,7 @@ All model calls go through `llm/client.py`. No agent or tool imports a provider 
 - **Fallback chain:** local Ollama, OpenRouter free models, Gemini free tier, chosen by the T03 smoke test (see RESULTS.md). Configured in `config.yaml`.
 - **Per-call log:** model, tokens in and out, latency, tokens per second, cost-equivalent, cache hit, agent name.
 - **Modes:** `live`, `record` (call and cache), `replay` (cache only; a miss is an error). CI uses `replay`.
+- **Run cap:** once a run has `max_llm_calls_per_run` turns (hits included), the client raises `CallCapReached` before calling out, and the run is `ESCALATED`.
 
 ## 8. Guard layer
 
