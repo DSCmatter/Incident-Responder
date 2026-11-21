@@ -1,0 +1,11 @@
+id: S04
+title: Shipping labels fail while the carrier API hangs
+split: dev
+difficulty: medium
+flags: []
+postmortem_id: pm-2026-06-carrier-timeouts
+alert:
+  time: '2026-11-15T15:22:00Z'
+  service: shipping-api
+  summary: Shipping label creation error rate above 40%
+seed: 404

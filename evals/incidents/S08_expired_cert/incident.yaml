@@ -1,0 +1,11 @@
+id: S08
+title: Card charges fail at midnight
+split: dev
+difficulty: easy
+flags: []
+postmortem_id: pm-2026-01-payments-cert
+alert:
+  time: '2026-11-20T00:20:00Z'
+  service: payments-gw
+  summary: Card charge success rate at 0% since 00:00 UTC
+seed: 808

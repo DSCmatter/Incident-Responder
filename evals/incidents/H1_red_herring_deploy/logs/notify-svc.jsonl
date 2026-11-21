@@ -1,0 +1,299 @@
+{"ts":"2026-11-20T12:00:27Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=37 trace=f43b62c32c9f"}
+{"ts":"2026-11-20T12:01:12Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=109 trace=f811af1ac7a8"}
+{"ts":"2026-11-20T12:01:38Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=90 trace=b133d836640f"}
+{"ts":"2026-11-20T12:01:40Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=80 trace=ad616364c7af"}
+{"ts":"2026-11-20T12:01:40Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=105 trace=b5df1bcc2da1"}
+{"ts":"2026-11-20T12:02:22Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=70 trace=ddaad5e8fe21"}
+{"ts":"2026-11-20T12:02:59Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=56 trace=b679f6e2ef82"}
+{"ts":"2026-11-20T12:03:07Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=111 trace=91ca619c2765"}
+{"ts":"2026-11-20T12:04:05Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=137 trace=4f7b6e82317c"}
+{"ts":"2026-11-20T12:04:07Z","level":"info","msg":"method=GET path=/v1/notify status=304 dur_ms=23 trace=4219a227c3f1"}
+{"ts":"2026-11-20T12:04:17Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=111 trace=fd2b5ef4164c"}
+{"ts":"2026-11-20T12:05:02Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=20 trace=de74bbe25288"}
+{"ts":"2026-11-20T12:05:09Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=116 trace=d42bb41975d0"}
+{"ts":"2026-11-20T12:05:37Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=139 trace=75f0865ff2d0"}
+{"ts":"2026-11-20T12:06:08Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=26 trace=34cd96bff38c"}
+{"ts":"2026-11-20T12:06:08Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=114 trace=cfcf5aedd8f6"}
+{"ts":"2026-11-20T12:06:31Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=29 trace=e826fb5dfc8c"}
+{"ts":"2026-11-20T12:07:05Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=136 trace=5fb27c1987a5"}
+{"ts":"2026-11-20T12:07:42Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=116 trace=fa79856da1b5"}
+{"ts":"2026-11-20T12:07:59Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=84 trace=5b75d8a4e836"}
+{"ts":"2026-11-20T12:08:36Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=83 trace=de00a4f017a6"}
+{"ts":"2026-11-20T12:08:50Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=46 trace=6ddab2367296"}
+{"ts":"2026-11-20T12:09:12Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=52 trace=50e21a2a6203"}
+{"ts":"2026-11-20T12:09:50Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=35 trace=0a583534b536"}
+{"ts":"2026-11-20T12:10:06Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=105 trace=ca3c4d7dc2be"}
+{"ts":"2026-11-20T12:10:26Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=107 trace=bf65c4c0b247"}
+{"ts":"2026-11-20T12:10:55Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=74 trace=91e8ec4a2d5a"}
+{"ts":"2026-11-20T12:11:30Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=38 trace=52cc5ce3fbf0"}
+{"ts":"2026-11-20T12:12:01Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=76 trace=c52be5528c0b"}
+{"ts":"2026-11-20T12:12:07Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=75 trace=a381f27d1b8c"}
+{"ts":"2026-11-20T12:12:30Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=125 trace=aa578e2890b2"}
+{"ts":"2026-11-20T12:12:35Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=69 trace=901223b7764b"}
+{"ts":"2026-11-20T12:12:59Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=95 trace=62945dc20acf"}
+{"ts":"2026-11-20T12:14:07Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=91 trace=e2bcf2a50a15"}
+{"ts":"2026-11-20T12:14:11Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=139 trace=0b694c68f8fd"}
+{"ts":"2026-11-20T12:14:17Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=88 trace=8dd075e62482"}
+{"ts":"2026-11-20T12:15:06Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=74 trace=5b8765556a27"}
+{"ts":"2026-11-20T12:15:41Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=69 trace=7121b5a0a4ac"}
+{"ts":"2026-11-20T12:15:51Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=90 trace=6ec96b6b64b1"}
+{"ts":"2026-11-20T12:16:21Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=19 trace=b72d8d06b03c"}
+{"ts":"2026-11-20T12:16:52Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=98 trace=45a1e594ed57"}
+{"ts":"2026-11-20T12:16:56Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=99 trace=fe915eba5849"}
+{"ts":"2026-11-20T12:17:34Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=97 trace=1834b730d837"}
+{"ts":"2026-11-20T12:17:38Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=90 trace=59ae1eb844de"}
+{"ts":"2026-11-20T12:18:10Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=69 trace=a2148c82bcfc"}
+{"ts":"2026-11-20T12:18:10Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=88 trace=62af9d7406cb"}
+{"ts":"2026-11-20T12:19:08Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=32 trace=f155a099c9eb"}
+{"ts":"2026-11-20T12:19:39Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=92 trace=e022f35da189"}
+{"ts":"2026-11-20T12:19:43Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=19 trace=f97837af3599"}
+{"ts":"2026-11-20T12:19:51Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=25 trace=b9ee16ab3e95"}
+{"ts":"2026-11-20T12:20:00Z","level":"warn","msg":"spool watcher: /var/spool/notify 80% used (threshold 80%)"}
+{"ts":"2026-11-20T12:20:19Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=122 trace=1d5f6cede22f"}
+{"ts":"2026-11-20T12:21:02Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=22 trace=c51e41c9ef8e"}
+{"ts":"2026-11-20T12:21:23Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=73 trace=1529db6231e4"}
+{"ts":"2026-11-20T12:21:44Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=83 trace=5ea24009463f"}
+{"ts":"2026-11-20T12:22:09Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=100 trace=88b545278016"}
+{"ts":"2026-11-20T12:22:32Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=22 trace=d33d13e1b678"}
+{"ts":"2026-11-20T12:23:16Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=45 trace=9fa019a37ad8"}
+{"ts":"2026-11-20T12:23:20Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=39 trace=170ee9982d09"}
+{"ts":"2026-11-20T12:24:05Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=63 trace=5fcbce629119"}
+{"ts":"2026-11-20T12:24:24Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=110 trace=a446c808cd82"}
+{"ts":"2026-11-20T12:24:58Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=120 trace=9b94fb4a6699"}
+{"ts":"2026-11-20T12:25:12Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=132 trace=8595a7d11ab4"}
+{"ts":"2026-11-20T12:25:13Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=134 trace=b2ae4e11757c"}
+{"ts":"2026-11-20T12:25:50Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=98 trace=02ed194293d7"}
+{"ts":"2026-11-20T12:25:54Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=18 trace=339d1d0a4047"}
+{"ts":"2026-11-20T12:26:34Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=46 trace=86a49dbea863"}
+{"ts":"2026-11-20T12:27:03Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=138 trace=0f748e0f6ce1"}
+{"ts":"2026-11-20T12:27:18Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=74 trace=53e5cc20adb4"}
+{"ts":"2026-11-20T12:27:26Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=59 trace=f7ee99c0654e"}
+{"ts":"2026-11-20T12:27:51Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=84 trace=d7f081b3c33d"}
+{"ts":"2026-11-20T12:28:33Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=77 trace=1537695a2e0d"}
+{"ts":"2026-11-20T12:28:59Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=32 trace=44d7760b281d"}
+{"ts":"2026-11-20T12:29:43Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=101 trace=7d7d9a610b2b"}
+{"ts":"2026-11-20T12:29:47Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=58 trace=4045fcba4f83"}
+{"ts":"2026-11-20T12:30:02Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=35 trace=53ca04eee9bd"}
+{"ts":"2026-11-20T12:30:24Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=32 trace=7d9ca9acb7e7"}
+{"ts":"2026-11-20T12:30:48Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=42 trace=fb0b17638d94"}
+{"ts":"2026-11-20T12:31:27Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=46 trace=9976eae6ed89"}
+{"ts":"2026-11-20T12:31:46Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=107 trace=24b18a342abd"}
+{"ts":"2026-11-20T12:32:02Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=77 trace=da8094388e4d"}
+{"ts":"2026-11-20T12:32:25Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=112 trace=1b23a4882628"}
+{"ts":"2026-11-20T12:32:41Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=62 trace=2b3085f6d35b"}
+{"ts":"2026-11-20T12:33:00Z","level":"warn","msg":"spool watcher: /var/spool/notify 92% used"}
+{"ts":"2026-11-20T12:33:38Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=87 trace=6534833d0144"}
+{"ts":"2026-11-20T12:33:51Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=89 trace=83b814979a55"}
+{"ts":"2026-11-20T12:33:58Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=56 trace=b09ab139467f"}
+{"ts":"2026-11-20T12:34:33Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=123 trace=74588ec08686"}
+{"ts":"2026-11-20T12:34:58Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=34 trace=af8674a18b0a"}
+{"ts":"2026-11-20T12:35:13Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=47 trace=3d694a80a457"}
+{"ts":"2026-11-20T12:35:22Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=79 trace=291b67e01b77"}
+{"ts":"2026-11-20T12:35:48Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=95 trace=6ff330637903"}
+{"ts":"2026-11-20T12:36:14Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=75 trace=6daaeb27d849"}
+{"ts":"2026-11-20T12:36:38Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=82 trace=6c0647ba3e08"}
+{"ts":"2026-11-20T12:37:23Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=122 trace=9eb75a0dbc58"}
+{"ts":"2026-11-20T12:37:54Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=78 trace=fe3c4a0909d8"}
+{"ts":"2026-11-20T12:38:04Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=74 trace=7c3ec353bd3e"}
+{"ts":"2026-11-20T12:38:27Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=48 trace=4336c5879a3d"}
+{"ts":"2026-11-20T12:38:33Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=34 trace=c2be56f13913"}
+{"ts":"2026-11-20T12:38:54Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=31 trace=768c340b5ccb"}
+{"ts":"2026-11-20T12:39:47Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=45 trace=bddf53eaab0c"}
+{"ts":"2026-11-20T12:40:24Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=90 trace=a37496bac791"}
+{"ts":"2026-11-20T12:40:40Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=115 trace=c0f29f5d40ce"}
+{"ts":"2026-11-20T12:40:57Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=88 trace=0f786184431d"}
+{"ts":"2026-11-20T12:40:58Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=66 trace=85fed1758c38"}
+{"ts":"2026-11-20T12:41:21Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=59 trace=824f764946da"}
+{"ts":"2026-11-20T12:41:30Z","level":"info","msg":"deployment dpl-5b19 revision 3c1e rollout complete"}
+{"ts":"2026-11-20T12:41:50Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=130 trace=a6a1d203b5f3"}
+{"ts":"2026-11-20T12:42:33Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=97 trace=cdc69745ce23"}
+{"ts":"2026-11-20T12:42:52Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=38 trace=03f12fd4d89a"}
+{"ts":"2026-11-20T12:43:00Z","level":"error","msg":"enqueue message msg-8df63879 failed: open /var/spool/notify/q/8df63879.json: no space left on device"}
+{"ts":"2026-11-20T12:43:33Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=41 trace=aa11144fabbd"}
+{"ts":"2026-11-20T12:43:38Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=77 trace=250452c37d11"}
+{"ts":"2026-11-20T12:43:46Z","level":"error","msg":"enqueue message msg-012873b2 failed: open /var/spool/notify/q/012873b2.json: no space left on device"}
+{"ts":"2026-11-20T12:44:17Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=71 trace=955818887fa6"}
+{"ts":"2026-11-20T12:44:34Z","level":"error","msg":"enqueue message msg-60d431d8 failed: open /var/spool/notify/q/60d431d8.json: no space left on device"}
+{"ts":"2026-11-20T12:44:36Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=130 trace=3580e76fe126"}
+{"ts":"2026-11-20T12:45:18Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=136 trace=c01f72e2297d"}
+{"ts":"2026-11-20T12:45:19Z","level":"error","msg":"enqueue message msg-0fccd88f failed: open /var/spool/notify/q/0fccd88f.json: no space left on device"}
+{"ts":"2026-11-20T12:45:21Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=23 trace=68fb1496cf71"}
+{"ts":"2026-11-20T12:45:36Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=73 trace=e18d61fe6f9f"}
+{"ts":"2026-11-20T12:46:04Z","level":"error","msg":"enqueue message msg-f7faa030 failed: open /var/spool/notify/q/f7faa030.json: no space left on device"}
+{"ts":"2026-11-20T12:46:14Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=78 trace=5e51f3f8d7d9"}
+{"ts":"2026-11-20T12:46:49Z","level":"error","msg":"enqueue message msg-7327923d failed: open /var/spool/notify/q/7327923d.json: no space left on device"}
+{"ts":"2026-11-20T12:46:53Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=90 trace=5b1128d39f53"}
+{"ts":"2026-11-20T12:47:14Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=129 trace=209749c33fc3"}
+{"ts":"2026-11-20T12:47:22Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=124 trace=a928cb67990f"}
+{"ts":"2026-11-20T12:47:23Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=137 trace=6abe3e193148"}
+{"ts":"2026-11-20T12:47:36Z","level":"error","msg":"enqueue message msg-994c15bb failed: open /var/spool/notify/q/994c15bb.json: no space left on device"}
+{"ts":"2026-11-20T12:47:58Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=134 trace=16a34a5c4c5b"}
+{"ts":"2026-11-20T12:48:00Z","level":"warn","msg":"dropping 76 queued notifications after 3 spool write failures"}
+{"ts":"2026-11-20T12:48:20Z","level":"error","msg":"enqueue message msg-06dee634 failed: open /var/spool/notify/q/06dee634.json: no space left on device"}
+{"ts":"2026-11-20T12:48:24Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=118 trace=48d846ac6fe6"}
+{"ts":"2026-11-20T12:49:05Z","level":"error","msg":"enqueue message msg-14c75933 failed: open /var/spool/notify/q/14c75933.json: no space left on device"}
+{"ts":"2026-11-20T12:49:06Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=138 trace=b938bb820cab"}
+{"ts":"2026-11-20T12:49:43Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=24 trace=1f3f064b5623"}
+{"ts":"2026-11-20T12:49:47Z","level":"error","msg":"enqueue message msg-878eeafb failed: open /var/spool/notify/q/878eeafb.json: no space left on device"}
+{"ts":"2026-11-20T12:50:07Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=75 trace=b7ccd8eb581d"}
+{"ts":"2026-11-20T12:50:13Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=117 trace=6cd0a142f174"}
+{"ts":"2026-11-20T12:50:29Z","level":"error","msg":"enqueue message msg-2e2f1ad1 failed: open /var/spool/notify/q/2e2f1ad1.json: no space left on device"}
+{"ts":"2026-11-20T12:50:48Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=71 trace=35e97eb36c26"}
+{"ts":"2026-11-20T12:50:53Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=32 trace=520433d01610"}
+{"ts":"2026-11-20T12:51:06Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=136 trace=989e67f3f85e"}
+{"ts":"2026-11-20T12:51:14Z","level":"error","msg":"enqueue message msg-ab58a94f failed: open /var/spool/notify/q/ab58a94f.json: no space left on device"}
+{"ts":"2026-11-20T12:51:29Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=95 trace=1ba9c0a6c143"}
+{"ts":"2026-11-20T12:51:55Z","level":"error","msg":"enqueue message msg-8a1e36f8 failed: open /var/spool/notify/q/8a1e36f8.json: no space left on device"}
+{"ts":"2026-11-20T12:52:32Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=49 trace=e52bf298727b"}
+{"ts":"2026-11-20T12:52:32Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=77 trace=47518f1f17bb"}
+{"ts":"2026-11-20T12:52:37Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=105 trace=9e964b13d4b3"}
+{"ts":"2026-11-20T12:52:44Z","level":"error","msg":"enqueue message msg-fe497d48 failed: open /var/spool/notify/q/fe497d48.json: no space left on device"}
+{"ts":"2026-11-20T12:53:00Z","level":"warn","msg":"dropping 70 queued notifications after 3 spool write failures"}
+{"ts":"2026-11-20T12:53:01Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=122 trace=98fe79b92a40"}
+{"ts":"2026-11-20T12:53:26Z","level":"error","msg":"enqueue message msg-d0b9eae6 failed: open /var/spool/notify/q/d0b9eae6.json: no space left on device"}
+{"ts":"2026-11-20T12:53:49Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=63 trace=8eff4d697785"}
+{"ts":"2026-11-20T12:54:09Z","level":"error","msg":"enqueue message msg-b20a7f7d failed: open /var/spool/notify/q/b20a7f7d.json: no space left on device"}
+{"ts":"2026-11-20T12:54:24Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=75 trace=b952b1d5b3e1"}
+{"ts":"2026-11-20T12:54:27Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=96 trace=e3090f65dacd"}
+{"ts":"2026-11-20T12:54:50Z","level":"error","msg":"enqueue message msg-892683c5 failed: open /var/spool/notify/q/892683c5.json: no space left on device"}
+{"ts":"2026-11-20T12:54:55Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=111 trace=02cd41fed8c4"}
+{"ts":"2026-11-20T12:55:01Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=50 trace=b3d3a3d0a0ed"}
+{"ts":"2026-11-20T12:55:31Z","level":"error","msg":"enqueue message msg-0bc55419 failed: open /var/spool/notify/q/0bc55419.json: no space left on device"}
+{"ts":"2026-11-20T12:55:59Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=96 trace=7e9cd120fb3d"}
+{"ts":"2026-11-20T12:56:01Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=88 trace=f1429b465c6c"}
+{"ts":"2026-11-20T12:56:16Z","level":"error","msg":"enqueue message msg-b1222be5 failed: open /var/spool/notify/q/b1222be5.json: no space left on device"}
+{"ts":"2026-11-20T12:56:50Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=79 trace=e2076729bfc1"}
+{"ts":"2026-11-20T12:56:53Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=84 trace=1cf9d582b0e4"}
+{"ts":"2026-11-20T12:57:02Z","level":"error","msg":"enqueue message msg-0f912ca3 failed: open /var/spool/notify/q/0f912ca3.json: no space left on device"}
+{"ts":"2026-11-20T12:57:20Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=74 trace=63199b718e35"}
+{"ts":"2026-11-20T12:57:44Z","level":"error","msg":"enqueue message msg-8873a98c failed: open /var/spool/notify/q/8873a98c.json: no space left on device"}
+{"ts":"2026-11-20T12:57:45Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=106 trace=deed1f1b9744"}
+{"ts":"2026-11-20T12:58:00Z","level":"warn","msg":"dropping 45 queued notifications after 3 spool write failures"}
+{"ts":"2026-11-20T12:58:17Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=69 trace=58397eb477a5"}
+{"ts":"2026-11-20T12:58:22Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=24 trace=63389edcc10d"}
+{"ts":"2026-11-20T12:58:26Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=60 trace=53978b4b2e8f"}
+{"ts":"2026-11-20T12:58:30Z","level":"error","msg":"enqueue message msg-f4bbeebf failed: open /var/spool/notify/q/f4bbeebf.json: no space left on device"}
+{"ts":"2026-11-20T12:59:17Z","level":"error","msg":"enqueue message msg-72979ca6 failed: open /var/spool/notify/q/72979ca6.json: no space left on device"}
+{"ts":"2026-11-20T12:59:44Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=67 trace=d2fda0460e85"}
+{"ts":"2026-11-20T12:59:45Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=40 trace=93b73021a681"}
+{"ts":"2026-11-20T12:59:46Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=46 trace=a9b63d88777f"}
+{"ts":"2026-11-20T13:00:00Z","level":"error","msg":"enqueue message msg-c40d109a failed: open /var/spool/notify/q/c40d109a.json: no space left on device"}
+{"ts":"2026-11-20T13:00:38Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=60 trace=dbacdd46f5fc"}
+{"ts":"2026-11-20T13:00:41Z","level":"error","msg":"enqueue message msg-1a9f202e failed: open /var/spool/notify/q/1a9f202e.json: no space left on device"}
+{"ts":"2026-11-20T13:00:49Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=60 trace=8685a568ca97"}
+{"ts":"2026-11-20T13:01:08Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=56 trace=49f4abb8a8f2"}
+{"ts":"2026-11-20T13:01:26Z","level":"error","msg":"enqueue message msg-a9816d16 failed: open /var/spool/notify/q/a9816d16.json: no space left on device"}
+{"ts":"2026-11-20T13:01:54Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=105 trace=f41644d3fdf8"}
+{"ts":"2026-11-20T13:02:03Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=87 trace=71de57f3b879"}
+{"ts":"2026-11-20T13:02:10Z","level":"error","msg":"enqueue message msg-30c55376 failed: open /var/spool/notify/q/30c55376.json: no space left on device"}
+{"ts":"2026-11-20T13:02:40Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=132 trace=ad49c61e75ba"}
+{"ts":"2026-11-20T13:02:55Z","level":"error","msg":"enqueue message msg-c4c9a044 failed: open /var/spool/notify/q/c4c9a044.json: no space left on device"}
+{"ts":"2026-11-20T13:03:00Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=67 trace=4e3d9207a5a6"}
+{"ts":"2026-11-20T13:03:00Z","level":"warn","msg":"dropping 72 queued notifications after 3 spool write failures"}
+{"ts":"2026-11-20T13:03:13Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=95 trace=d046e18641ff"}
+{"ts":"2026-11-20T13:03:41Z","level":"error","msg":"enqueue message msg-bb9c031a failed: open /var/spool/notify/q/bb9c031a.json: no space left on device"}
+{"ts":"2026-11-20T13:03:52Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=96 trace=baf772bbaef8"}
+{"ts":"2026-11-20T13:04:03Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=32 trace=94a48503c26c"}
+{"ts":"2026-11-20T13:04:18Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=79 trace=0d23c71992ff"}
+{"ts":"2026-11-20T13:04:26Z","level":"error","msg":"enqueue message msg-39a828b6 failed: open /var/spool/notify/q/39a828b6.json: no space left on device"}
+{"ts":"2026-11-20T13:04:43Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=65 trace=79c31a6faa93"}
+{"ts":"2026-11-20T13:05:11Z","level":"error","msg":"enqueue message msg-29811358 failed: open /var/spool/notify/q/29811358.json: no space left on device"}
+{"ts":"2026-11-20T13:05:12Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=114 trace=a9e54b41aa85"}
+{"ts":"2026-11-20T13:05:51Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=110 trace=dc830113ef6f"}
+{"ts":"2026-11-20T13:05:53Z","level":"error","msg":"enqueue message msg-b55b54aa failed: open /var/spool/notify/q/b55b54aa.json: no space left on device"}
+{"ts":"2026-11-20T13:06:24Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=49 trace=823f2d16bdf2"}
+{"ts":"2026-11-20T13:06:35Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=34 trace=6a3b30d5a0a8"}
+{"ts":"2026-11-20T13:06:39Z","level":"error","msg":"enqueue message msg-7c171d9a failed: open /var/spool/notify/q/7c171d9a.json: no space left on device"}
+{"ts":"2026-11-20T13:06:53Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=117 trace=50651416dbc3"}
+{"ts":"2026-11-20T13:07:28Z","level":"error","msg":"enqueue message msg-ff04b2ff failed: open /var/spool/notify/q/ff04b2ff.json: no space left on device"}
+{"ts":"2026-11-20T13:07:39Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=53 trace=c5c309c6be43"}
+{"ts":"2026-11-20T13:07:43Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=68 trace=c09c9594c1da"}
+{"ts":"2026-11-20T13:08:00Z","level":"warn","msg":"dropping 47 queued notifications after 3 spool write failures"}
+{"ts":"2026-11-20T13:08:08Z","level":"error","msg":"enqueue message msg-4434b77c failed: open /var/spool/notify/q/4434b77c.json: no space left on device"}
+{"ts":"2026-11-20T13:08:18Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=20 trace=042e7d1be2a7"}
+{"ts":"2026-11-20T13:08:29Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=121 trace=65b9c946805b"}
+{"ts":"2026-11-20T13:08:36Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=121 trace=ab30fa5db57f"}
+{"ts":"2026-11-20T13:08:48Z","level":"error","msg":"enqueue message msg-195f0195 failed: open /var/spool/notify/q/195f0195.json: no space left on device"}
+{"ts":"2026-11-20T13:08:54Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=55 trace=40b63a6a39e4"}
+{"ts":"2026-11-20T13:09:23Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=96 trace=6839dcc3a570"}
+{"ts":"2026-11-20T13:09:33Z","level":"error","msg":"enqueue message msg-e603f48c failed: open /var/spool/notify/q/e603f48c.json: no space left on device"}
+{"ts":"2026-11-20T13:10:18Z","level":"error","msg":"enqueue message msg-a16ec7b6 failed: open /var/spool/notify/q/a16ec7b6.json: no space left on device"}
+{"ts":"2026-11-20T13:10:19Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=131 trace=bdf8a51553bc"}
+{"ts":"2026-11-20T13:10:25Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=122 trace=a9796161c0de"}
+{"ts":"2026-11-20T13:10:41Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=51 trace=6df2152ed33e"}
+{"ts":"2026-11-20T13:10:58Z","level":"error","msg":"enqueue message msg-8e327dae failed: open /var/spool/notify/q/8e327dae.json: no space left on device"}
+{"ts":"2026-11-20T13:11:25Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=71 trace=e27a067e182e"}
+{"ts":"2026-11-20T13:11:44Z","level":"error","msg":"enqueue message msg-7f560d54 failed: open /var/spool/notify/q/7f560d54.json: no space left on device"}
+{"ts":"2026-11-20T13:11:48Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=63 trace=e679b76db118"}
+{"ts":"2026-11-20T13:12:07Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=37 trace=d6467569145b"}
+{"ts":"2026-11-20T13:12:26Z","level":"error","msg":"enqueue message msg-371844da failed: open /var/spool/notify/q/371844da.json: no space left on device"}
+{"ts":"2026-11-20T13:12:51Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=26 trace=edf4f06c0b7c"}
+{"ts":"2026-11-20T13:13:00Z","level":"warn","msg":"dropping 58 queued notifications after 3 spool write failures"}
+{"ts":"2026-11-20T13:13:06Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=83 trace=437234addb5b"}
+{"ts":"2026-11-20T13:13:13Z","level":"error","msg":"enqueue message msg-bf62b3d0 failed: open /var/spool/notify/q/bf62b3d0.json: no space left on device"}
+{"ts":"2026-11-20T13:13:18Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=97 trace=e7e6d7dba446"}
+{"ts":"2026-11-20T13:13:39Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=30 trace=755793023ccd"}
+{"ts":"2026-11-20T13:13:59Z","level":"error","msg":"enqueue message msg-5a3c7e60 failed: open /var/spool/notify/q/5a3c7e60.json: no space left on device"}
+{"ts":"2026-11-20T13:14:09Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=82 trace=c13051980f21"}
+{"ts":"2026-11-20T13:14:27Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=79 trace=01027578674f"}
+{"ts":"2026-11-20T13:14:42Z","level":"error","msg":"enqueue message msg-6619e60f failed: open /var/spool/notify/q/6619e60f.json: no space left on device"}
+{"ts":"2026-11-20T13:14:45Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=100 trace=3e815ec7c8f8"}
+{"ts":"2026-11-20T13:15:04Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=119 trace=523516191058"}
+{"ts":"2026-11-20T13:15:24Z","level":"error","msg":"enqueue message msg-b1b9c292 failed: open /var/spool/notify/q/b1b9c292.json: no space left on device"}
+{"ts":"2026-11-20T13:15:37Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=130 trace=b43d6e4eb768"}
+{"ts":"2026-11-20T13:15:49Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=99 trace=cd559c8c2809"}
+{"ts":"2026-11-20T13:16:08Z","level":"error","msg":"enqueue message msg-019a3c04 failed: open /var/spool/notify/q/019a3c04.json: no space left on device"}
+{"ts":"2026-11-20T13:16:16Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=35 trace=32a4bc3f3528"}
+{"ts":"2026-11-20T13:16:51Z","level":"error","msg":"enqueue message msg-a55dd966 failed: open /var/spool/notify/q/a55dd966.json: no space left on device"}
+{"ts":"2026-11-20T13:17:04Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=45 trace=915bbbec818b"}
+{"ts":"2026-11-20T13:17:14Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=58 trace=8f0e2f030008"}
+{"ts":"2026-11-20T13:17:21Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=138 trace=a6e35c9ef50a"}
+{"ts":"2026-11-20T13:17:32Z","level":"error","msg":"enqueue message msg-68df3515 failed: open /var/spool/notify/q/68df3515.json: no space left on device"}
+{"ts":"2026-11-20T13:17:55Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=45 trace=22da3197dd8e"}
+{"ts":"2026-11-20T13:18:00Z","level":"warn","msg":"dropping 87 queued notifications after 3 spool write failures"}
+{"ts":"2026-11-20T13:18:12Z","level":"error","msg":"enqueue message msg-4e6d6a5b failed: open /var/spool/notify/q/4e6d6a5b.json: no space left on device"}
+{"ts":"2026-11-20T13:18:15Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=111 trace=2468770ec1ff"}
+{"ts":"2026-11-20T13:18:28Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=108 trace=d2ce653c4f30"}
+{"ts":"2026-11-20T13:18:56Z","level":"error","msg":"enqueue message msg-254b9475 failed: open /var/spool/notify/q/254b9475.json: no space left on device"}
+{"ts":"2026-11-20T13:19:25Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=128 trace=211bf7fc56b2"}
+{"ts":"2026-11-20T13:19:25Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=62 trace=33150d5092ca"}
+{"ts":"2026-11-20T13:19:44Z","level":"error","msg":"enqueue message msg-7df9e907 failed: open /var/spool/notify/q/7df9e907.json: no space left on device"}
+{"ts":"2026-11-20T13:20:05Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=123 trace=41f20a551d24"}
+{"ts":"2026-11-20T13:20:25Z","level":"error","msg":"enqueue message msg-3d389cb6 failed: open /var/spool/notify/q/3d389cb6.json: no space left on device"}
+{"ts":"2026-11-20T13:20:30Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=108 trace=1bf866f36bdc"}
+{"ts":"2026-11-20T13:20:43Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=115 trace=43a628321a69"}
+{"ts":"2026-11-20T13:21:08Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=44 trace=1889d02734b7"}
+{"ts":"2026-11-20T13:21:13Z","level":"error","msg":"enqueue message msg-7af37b72 failed: open /var/spool/notify/q/7af37b72.json: no space left on device"}
+{"ts":"2026-11-20T13:21:17Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=77 trace=7e6ec33976b1"}
+{"ts":"2026-11-20T13:21:47Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=110 trace=d2c659f78ab5"}
+{"ts":"2026-11-20T13:22:02Z","level":"error","msg":"enqueue message msg-a47270a3 failed: open /var/spool/notify/q/a47270a3.json: no space left on device"}
+{"ts":"2026-11-20T13:22:16Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=95 trace=51f7384c5a79"}
+{"ts":"2026-11-20T13:22:45Z","level":"error","msg":"enqueue message msg-88235868 failed: open /var/spool/notify/q/88235868.json: no space left on device"}
+{"ts":"2026-11-20T13:23:00Z","level":"warn","msg":"dropping 56 queued notifications after 3 spool write failures"}
+{"ts":"2026-11-20T13:23:03Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=100 trace=1ab010d475bd"}
+{"ts":"2026-11-20T13:23:05Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=41 trace=9162a2b22eea"}
+{"ts":"2026-11-20T13:23:27Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=59 trace=5abc2fd3b8d8"}
+{"ts":"2026-11-20T13:23:28Z","level":"error","msg":"enqueue message msg-0cfcf8e2 failed: open /var/spool/notify/q/0cfcf8e2.json: no space left on device"}
+{"ts":"2026-11-20T13:24:15Z","level":"error","msg":"enqueue message msg-1bf2924d failed: open /var/spool/notify/q/1bf2924d.json: no space left on device"}
+{"ts":"2026-11-20T13:24:19Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=26 trace=4917a5e58229"}
+{"ts":"2026-11-20T13:24:32Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=80 trace=6a8b8f66c259"}
+{"ts":"2026-11-20T13:24:56Z","level":"error","msg":"enqueue message msg-ac220e5a failed: open /var/spool/notify/q/ac220e5a.json: no space left on device"}
+{"ts":"2026-11-20T13:25:09Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=96 trace=e014ec1302fb"}
+{"ts":"2026-11-20T13:25:10Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=26 trace=c0d20cabfa08"}
+{"ts":"2026-11-20T13:25:16Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=105 trace=8b5ee1f8a203"}
+{"ts":"2026-11-20T13:25:38Z","level":"error","msg":"enqueue message msg-e86b64b3 failed: open /var/spool/notify/q/e86b64b3.json: no space left on device"}
+{"ts":"2026-11-20T13:26:17Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=50 trace=994fc198c417"}
+{"ts":"2026-11-20T13:26:18Z","level":"error","msg":"enqueue message msg-d6f2470c failed: open /var/spool/notify/q/d6f2470c.json: no space left on device"}
+{"ts":"2026-11-20T13:26:34Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=80 trace=61fd2f6025fc"}
+{"ts":"2026-11-20T13:27:00Z","level":"error","msg":"enqueue message msg-20baab27 failed: open /var/spool/notify/q/20baab27.json: no space left on device"}
+{"ts":"2026-11-20T13:27:15Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=70 trace=4647acd3b54c"}
+{"ts":"2026-11-20T13:27:19Z","level":"info","msg":"method=GET path=/v1/notify status=200 dur_ms=103 trace=c41039e25dd5"}
+{"ts":"2026-11-20T13:27:40Z","level":"error","msg":"enqueue message msg-ef6744fd failed: open /var/spool/notify/q/ef6744fd.json: no space left on device"}
+{"ts":"2026-11-20T13:27:53Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=81 trace=6cfeeebac959"}
+{"ts":"2026-11-20T13:28:00Z","level":"warn","msg":"dropping 78 queued notifications after 3 spool write failures"}
+{"ts":"2026-11-20T13:28:20Z","level":"error","msg":"enqueue message msg-afa0076e failed: open /var/spool/notify/q/afa0076e.json: no space left on device"}
+{"ts":"2026-11-20T13:28:26Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=54 trace=01cf2644165c"}
+{"ts":"2026-11-20T13:28:34Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=23 trace=2b60812bfa19"}
+{"ts":"2026-11-20T13:28:42Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=42 trace=8ef1af97f2bd"}
+{"ts":"2026-11-20T13:29:00Z","level":"error","msg":"enqueue message msg-9382f7bd failed: open /var/spool/notify/q/9382f7bd.json: no space left on device"}
+{"ts":"2026-11-20T13:29:25Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=50 trace=ff397667f134"}

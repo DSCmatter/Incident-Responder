@@ -1,0 +1,14 @@
+root_cause: disk_full
+service: ledger-writer
+summary: The /var/lib/ledger volume filled steadily and reached 100% at 02:58; every WAL flush then failed
+  with no space left on device and the ingest backlog grew.
+acceptable_fixes:
+- free_disk
+must_find:
+- file: logs/ledger-writer.jsonl
+  pattern: no space left on device
+- file: logs/ledger-writer.jsonl
+  pattern: /var/lib/ledger/wal
+- file: metrics/ledger-writer.json
+  pattern: '"disk_used_pct"'
+escalation_ok: false

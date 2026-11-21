@@ -1,0 +1,14 @@
+root_cause: capacity
+service: reports-api
+summary: The monthly export job started at 09:00 on the same three reports-api replicas that serve traffic
+  and pegged CPU near 97%; request queues overflowed and requests hit the 5 s queue timeout.
+acceptable_fixes:
+- scale_out
+must_find:
+- file: logs/reports-api.jsonl
+  pattern: started job monthly-export
+- file: logs/reports-api.jsonl
+  pattern: queue depth
+- file: metrics/reports-api.json
+  pattern: '"cpu_pct"'
+escalation_ok: false

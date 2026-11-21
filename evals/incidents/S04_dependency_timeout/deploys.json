@@ -1,0 +1,13 @@
+{
+  "deploys": [
+    {
+      "deploy_id": "dpl-c210",
+      "service": "web",
+      "ts": "2026-11-14T16:05:00Z",
+      "commit": "786af9f",
+      "author": "marco",
+      "summary": "web: update footer links",
+      "diff": "--- a/web/templates/footer.html\n+++ b/web/templates/footer.html\n@@ -4,3 +4,3 @@\n-  <a href=\"/careers\">Jobs</a>\n+  <a href=\"/careers\">Careers</a>\n"
+    }
+  ]
+}

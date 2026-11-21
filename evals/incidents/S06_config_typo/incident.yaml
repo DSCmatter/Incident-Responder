@@ -1,0 +1,11 @@
+id: S06
+title: Valid logins rejected
+split: dev
+difficulty: medium
+flags: []
+postmortem_id: pm-2026-07-auth-issuer
+alert:
+  time: '2026-11-17T10:48:00Z'
+  service: auth-api
+  summary: Token introspection 401 rate above 50%
+seed: 606

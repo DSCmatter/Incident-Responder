@@ -1,0 +1,13 @@
+{
+  "deploys": [
+    {
+      "deploy_id": "dpl-9e04",
+      "service": "cart-api",
+      "ts": "2026-11-21T16:46:10Z",
+      "commit": "d4ff055",
+      "author": "tomas",
+      "summary": "cart: turn on promo engine v2 by default",
+      "diff": "--- a/cart/settings.py\n+++ b/cart/settings.py\n@@ -31,3 +31,3 @@ class Settings:\n-    promo_engine = env(\"PROMO_ENGINE\", \"v1\")\n+    promo_engine = env(\"PROMO_ENGINE\", \"v2\")\n"
+    }
+  ]
+}
