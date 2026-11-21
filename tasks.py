@@ -112,7 +112,7 @@ def build_parser() -> argparse.ArgumentParser:
     p = sub.add_parser("eval")
     p.add_argument("--split", default="dev", choices=["dev", "heldout", "all"])
     p.add_argument("--repeats", type=int, default=1)
-    p.add_argument("--agent", default="diagnosis", help="diagnosis | stub")
+    p.add_argument("--agent", default="stub", help="stub | diagnosis (registered when T08 lands)")
     p.set_defaults(func=eval_)
 
     p = sub.add_parser("run")
