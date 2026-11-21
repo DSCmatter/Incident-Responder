@@ -157,6 +157,8 @@ ADK wiring: every agent is an ADK `LlmAgent` whose model is `ClientModel` in `ag
 
 ### Supervisor routing
 
+Implemented now (T10, `agents/supervisor.py`): fixed routing, Triage, then full Diagnosis, then Fix, then `AWAITING_APPROVAL`. Step 2's fast path arrives with T16, step 3 with the verifier (T14), and step 4's critic loop with T15.
+
 1. Run Triage.
 2. If `known_pattern` is true and the top runbook score is at or above the configured threshold, run a short diagnosis (max 3 steps) guided by that runbook. Otherwise run full diagnosis (max 6 steps).
 3. If verification fails, send the rejected claims back to Diagnosis once. If still unsupported, mark the run `ESCALATED` with the unverified findings attached.

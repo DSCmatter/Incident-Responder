@@ -6,6 +6,7 @@ harness test can drive the same scripted transport the client tests use.
 
 from __future__ import annotations
 
+import json
 from collections.abc import Sequence
 from pathlib import Path
 
@@ -123,3 +124,72 @@ def client_for(tmp_path: Path, settings: Settings, transport: object, *, run_id:
 
 def ask(text: str = "why is checkout down", agent: str = "triage") -> ModelCall:
     return ModelCall(agent=agent, system="be terse", turns=(Turn(Role.user, (TextPart(text),)),))
+
+
+def openai_text(content: str) -> dict:
+    return {
+        "choices": [
+            {"message": {"role": "assistant", "content": content}, "finish_reason": "stop"}
+        ],
+        "usage": {"prompt_tokens": 10, "completion_tokens": 2},
+    }
+
+
+def openai_tool_call(name: str, args: dict, call_id: str = "c1") -> dict:
+    call = {
+        "id": call_id,
+        "type": "function",
+        "function": {"name": name, "arguments": json.dumps(args)},
+    }
+    return {
+        "choices": [
+            {
+                "message": {"role": "assistant", "content": None, "tool_calls": [call]},
+                "finish_reason": "tool_calls",
+            }
+        ],
+        "usage": {"prompt_tokens": 100, "completion_tokens": 20},
+    }
+
+
+S01_TRIAGE = {
+    "service": "checkout-api",
+    "severity": "sev2",
+    "areas_to_check": ["recent deploys", "error logs"],
+    "known_pattern": False,
+}
+
+S01_ROLLBACK = {
+    "action": "rollback_deploy",
+    "target": "dpl-4f21",
+    "params": {},
+    "rationale": "dpl-4f21 broke the payments base URL",
+    "risk": "sev3",
+    "blast_radius": "checkout-api only",
+    "rollback_plan": "redeploy dpl-4f21 once the variable is restored",
+    "supported_by": [0],
+}
+
+
+def s01_findings(evidence_id: str) -> dict:
+    return {
+        "root_cause": "bad_deploy",
+        "service": "checkout-api",
+        "summary": "dpl-4f21 broke the payments base URL",
+        "confidence": 0.8,
+        "claims": [
+            {
+                "text": "A deploy to checkout-api shortly before the alert",
+                "evidence_ids": [evidence_id],
+                "quote": "dpl-4f21",
+            }
+        ],
+    }
+
+
+S01_SOLVED = (
+    openai_tool_call("submit_triage", S01_TRIAGE, "t1"),
+    openai_tool_call("list_recent_deploys", {"service": "checkout-api"}, "d1"),
+    openai_tool_call("submit_findings", s01_findings("ev_deploy_1"), "d2"),
+    openai_tool_call("submit_fix_proposal", S01_ROLLBACK, "f1"),
+)

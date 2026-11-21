@@ -1,10 +1,11 @@
-"""Triage, diagnosis and fix for one incident, persisted stage by stage.
+"""The supervisor: routes one incident through triage, diagnosis and fix, stage by stage.
 
-A run stops at AWAITING_APPROVAL with a dry-run of the proposed action, or
-earlier: ESCALATED when a cap stops it or the fix agent hands it to a human,
-FAILED when an agent gives no valid answer or no backend answers. `decide`
-records a human decision and resumes the run; only an approved run executes,
-and only through the guard.
+Routing is fixed for now (DESIGN.md section 5; dynamic routing is T16). Every
+stage persists to the run store. A run stops at AWAITING_APPROVAL with a
+dry-run of the proposed action, or earlier: ESCALATED when a cap stops it or
+the fix agent hands it to a human, FAILED when an agent gives no valid answer
+or no backend answers. `decide` records a human decision and resumes the run;
+only an approved run executes, and only through the guard.
 """
 
 from __future__ import annotations
@@ -37,13 +38,13 @@ from tools.evidence import EvidenceStore
 from tools.read_only import ToolSession
 from tools.write import ActionRecord, dry_run, execute
 
-logger = logging.getLogger("pipeline")
+logger = logging.getLogger("supervisor")
 
 TRIAGE_MAX_CALLS = 2
 FIX_MAX_CALLS = 3
 
 
-class ReactRunner:
+class Supervisor:
     def __init__(
         self,
         settings: Settings | None = None,
@@ -96,7 +97,7 @@ class ReactRunner:
                 client.close()
         report = build_report(self.runs, run_id)
         logger.info(
-            "pipeline run=%s incident=%s state=%s reason=%s calls=%d",
+            "supervisor run=%s incident=%s state=%s reason=%s calls=%d",
             run_id,
             incident_id,
             report.state.value,
@@ -198,6 +199,7 @@ def build_report(runs: RunStore, run_id: str) -> RunReport:
         stop_reason=run.stop_reason,
         findings=Findings.model_validate(findings) if findings else None,
         proposal=FixProposal.model_validate(proposal) if proposal else None,
+        dry_run=run.payloads["dry_run"]["outcome"] if "dry_run" in run.payloads else None,
         approval=approval,
         executed_actions=[f"{record.tool}({record.target})" for record in executed],
         unsafe_actions=0 if approved else len(executed),

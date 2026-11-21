@@ -83,6 +83,13 @@ def run_incident(args: argparse.Namespace) -> int:
     return cli_main(["run", "--incident", args.incident])
 
 
+def decide_run(args: argparse.Namespace) -> int:
+    from cli import main as cli_main
+
+    argv = [args.command, "--run-id", args.run_id, "--by", args.by]
+    return cli_main([*argv, "--note", args.note] if args.note else argv)
+
+
 def trace(_: argparse.Namespace) -> int:
     print("Tracing lands in T19 (week 4). Nothing to open yet.")
     return 0
@@ -115,12 +122,19 @@ def build_parser() -> argparse.ArgumentParser:
     p = sub.add_parser("eval")
     p.add_argument("--split", default="dev", choices=["dev", "heldout", "all"])
     p.add_argument("--repeats", type=int, default=1)
-    p.add_argument("--agent", default="stub", help="stub | react")
+    p.add_argument("--agent", default="supervisor", help="supervisor | stub")
     p.set_defaults(func=eval_)
 
     p = sub.add_parser("run")
     p.add_argument("--incident", default="S01")
     p.set_defaults(func=run_incident)
+
+    for name in ("approve", "reject"):
+        p = sub.add_parser(name)
+        p.add_argument("--run-id", required=True)
+        p.add_argument("--by", required=True)
+        p.add_argument("--note", default="")
+        p.set_defaults(func=decide_run)
 
     sub.add_parser("trace").set_defaults(func=trace)
     return parser

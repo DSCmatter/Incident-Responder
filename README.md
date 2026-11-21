@@ -47,7 +47,8 @@ Requirements: Python 3.11 or newer, Docker. No paid keys needed.
 make setup
 cp .env.example .env        # add a free Gemini API key; optional OpenRouter key
 make up
-make run INCIDENT=S01
+make run INCIDENT=S01      # prints the report; pauses before any change
+make approve RUN=<run id> BY=<your name>
 make eval SPLIT=dev
 make trace
 ```

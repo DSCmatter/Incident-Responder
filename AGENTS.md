@@ -32,6 +32,8 @@ Keep these targets working; add them to the Makefile as you build.
 | `make test` | Unit tests, replay mode, no network |
 | `make lint` | ruff check and format check |
 | `make run INCIDENT=S01` | Run one incident, print the report |
+| `make approve RUN=<run id> BY=<name>` | Approve a paused run's fix; it executes on the demo stack through the guard |
+| `make reject RUN=<run id> BY=<name>` | Reject a paused run's fix; nothing executes |
 | `make eval SPLIT=dev` | Run the eval harness on a split, write `evals/results/*.json` |
 | `make trace` | Open the local trace UI |
 

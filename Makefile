@@ -3,8 +3,11 @@ SPLIT ?= dev
 INCIDENT ?= S01
 REPEATS ?= 1
 ARGS ?=
+RUN ?=
+BY ?=
+NOTE ?=
 
-.PHONY: setup up down lint fmt test smoke eval run trace
+.PHONY: setup up down lint fmt test smoke eval run approve reject trace
 
 setup:
 	$(PY) tasks.py setup
@@ -32,6 +35,12 @@ eval:
 
 run:
 	$(PY) tasks.py run --incident $(INCIDENT) $(ARGS)
+
+approve:
+	$(PY) tasks.py approve --run-id "$(RUN)" --by "$(BY)" --note "$(NOTE)"
+
+reject:
+	$(PY) tasks.py reject --run-id "$(RUN)" --by "$(BY)" --note "$(NOTE)"
 
 trace:
 	$(PY) tasks.py trace
