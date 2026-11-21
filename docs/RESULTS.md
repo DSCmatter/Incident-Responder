@@ -8,7 +8,7 @@ Template. Fill every number from `make eval` output in `evals/results/`; never t
 
 | Backend | Model | hello | tool_call | structured | Notes |
 | --- | --- | --- | --- | --- | --- |
-| ollama | qwen2.5:7b-instruct | fail | fail | fail | Model not pulled yet (HTTP 404); rerun `make smoke` after `ollama pull qwen2.5:7b-instruct` |
+| ollama | qwen2.5:7b-instruct | ok | ok | ok | GTX 1650 4 GB, 15 GB RAM. First call 53 s (model load), then 4.4 to 10.7 s per call on prompts of about 200 tokens |
 | openrouter | nvidia/nemotron-3-ultra-550b-a55b:free | ok | ok | ok | 2.1 to 5.4 s per call; structured answer used 363 output tokens |
 | openrouter | nvidia/nemotron-3.5-super-vl:free | ok | ok | ok | 0.6 to 2.2 s per call; structured answer used 258 output tokens |
 | openrouter | baidu/ernie-5.5-flash-preview:free | n/a | n/a | ok | Only the structured check ran live; the full rerun got HTTP 429 upstream |

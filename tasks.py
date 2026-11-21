@@ -104,7 +104,10 @@ def build_parser() -> argparse.ArgumentParser:
 
     p = sub.add_parser("smoke")
     p.add_argument(
-        "--backends", default=None, help="comma-separated subset, default: configured chain"
+        "--backends",
+        default=None,
+        type=lambda value: [name.strip() for name in value.split(",") if name.strip()],
+        help="comma-separated subset, default: configured chain",
     )
     p.add_argument("--no-write", action="store_true", help="print the table without writing JSON")
     p.set_defaults(func=smoke)
@@ -112,7 +115,7 @@ def build_parser() -> argparse.ArgumentParser:
     p = sub.add_parser("eval")
     p.add_argument("--split", default="dev", choices=["dev", "heldout", "all"])
     p.add_argument("--repeats", type=int, default=1)
-    p.add_argument("--agent", default="stub", help="stub | diagnosis (registered when T08 lands)")
+    p.add_argument("--agent", default="stub", help="stub | react")
     p.set_defaults(func=eval_)
 
     p = sub.add_parser("run")
