@@ -23,18 +23,20 @@ Candidates were every free OpenRouter model listing `tools` support on 2026-11-2
 
 | Run | Date | Commit | Backend | Split | Repeats | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| baseline | TBD | TBD | TBD | dev | 3 | Plain loop, no RAG, no verifier |
+| baseline | 2026-11-21 | Not recorded | Not recorded | dev | 3 | Supervisor, no RAG or verifier; artifact: `evals/results/20261121T174526Z-dev-supervisor.json`. Artifact does not record backend or prompt versions. |
 
 ## Main results
 
 | Setup | Root-cause accuracy | Fix correct | Citation faithfulness | Evidence recall | Unsafe actions | LLM calls per incident | Cost per incident (equiv.) | p95 latency |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Baseline (no RAG, no verifier) | TBD | TBD | TBD | TBD | 0 | TBD | TBD | TBD |
+| Baseline (no RAG, no verifier) | 0.000 | 0.033 | 0.000 | 0.039 | 0 | 2.03 | 0.000000 | TBD |
 | + RAG | TBD | TBD | TBD | TBD | 0 | TBD | TBD | TBD |
 | + RAG + verifier | TBD | TBD | TBD | TBD | 0 | TBD | TBD | TBD |
 | + critic loop (full system) | TBD | TBD | TBD | TBD | 0 | TBD | TBD | TBD |
 
 Report dev and held-out separately. Core-set rows include the spread over 3 repeats.
+
+The baseline values above come from the saved 10-incident, 3-repeat supervisor run linked in the run log. The artifact reports mean root-cause score 0.000, fix score 0.033, citation score 0.000, evidence recall 0.039, zero unsafe actions, 2.03 LLM calls per incident, and zero cost-equivalent. It does not record the backend, prompt versions, or per-run latencies needed to report p95, so those details remain unknown and p95 stays TBD.
 
 ## Ablations
 

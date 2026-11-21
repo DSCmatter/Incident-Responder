@@ -23,7 +23,7 @@ Build order, free-tier budget, and gates for the incident responder. Companion d
 
 Size: S under 2 hours, M half a day, L a day or more. Do tasks in order; a task needs the ones before it unless noted.
 
-**Status on 2026-11-21.** T01 to T07 are done. T03 chose the backends: local Ollama (qwen2.5:7b-instruct) is primary, OpenRouter (Nemotron Ultra) is the fallback, and Gemini is unused until a key exists. T08's agents run end to end, but the gate is not met: Nemotron Ultra found S01's root cause in 61.2 s against the 60 s cap, and local qwen2.5:7b on a GTX 1650 timed out on S02 and S03 after 3 calls. Passing needs a faster backend, a higher `run_timeout_seconds`, or context trimming (T21) moved earlier. T09 onward waits on that decision.
+**Status on 2026-11-21.** T01 to T07 are done. T03 chose the backends: local Ollama (qwen2.5:7b-instruct) is primary, OpenRouter (Nemotron Ultra) is the fallback, and Gemini is unused until a key exists. T08's agents run end to end, but the gate is not met: Nemotron Ultra found S01's root cause in 61.2 s against the 60 s cap, and local qwen2.5:7b on a GTX 1650 timed out on S02 and S03 after 3 calls. T09 to T11 have since been built, but the T12 baseline gate remains open; resolve the latency issue before treating end-to-end accuracy or the baseline as passed.
 
 ### Week 1: foundation
 
@@ -42,10 +42,10 @@ Size: S under 2 hours, M half a day, L a day or more. Do tasks in order; a task 
 
 | ID | Task | Size | Done when | Status |
 | --- | --- | --- | --- | --- |
-| T09 | Fix agent, write tools (dry-run), approval gate, persisted run state | M | A run pauses at `AWAITING_APPROVAL` and resumes after approval | Not started |
-| T10 | Supervisor (fixed routing for now) and `make run INCIDENT=...` CLI | M | One command prints the report | Not started |
-| T11 | Fixtures for the rest of dev: S04 to S08, H1, H3 | M | 10 dev incidents, each manually checked | Not started |
-| T12 | **Baseline eval:** dev set, 3 repeats, plain loop | S | **Gate: baseline numbers in RESULTS.md** | Not started |
+| T09 | Fix agent, write tools (dry-run), approval gate, persisted run state | M | A run pauses at `AWAITING_APPROVAL` and resumes after approval | Done |
+| T10 | Supervisor (fixed routing for now) and `make run INCIDENT=...` CLI | M | One command prints the report | Done |
+| T11 | Fixtures for the rest of dev: S04 to S08, H1, H3 | M | 10 dev incidents, each manually checked | Done (fixtures and builders added; commit notes document manual read-through) |
+| T12 | **Baseline eval:** dev set, 3 repeats, plain loop | S | **Gate: baseline numbers in RESULTS.md** | Partial (3-repeat dev supervisor run recorded in RESULTS.md; run artifact omits backend and prompt versions) |
 
 ### Week 3: the capabilities
 
