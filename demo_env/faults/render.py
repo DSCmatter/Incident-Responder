@@ -192,17 +192,7 @@ def sha(rng: random.Random) -> str:
     return f"{rng.getrandbits(160):040x}"
 
 
-SIGNED_METRICS = frozenset({MetricName.cert_days_left})
-
-
 def dumps_series(
     service: str, timeline: Timeline, series: dict[MetricName, list[MetricPoint]]
 ) -> MetricSeries:
-    """Noise can push a near-zero series below zero; only a signed metric may go there."""
-    floored = {
-        name: points
-        if name in SIGNED_METRICS
-        else [MetricPoint(ts=p.ts, value=p.value if p.value > 0 else 0.0) for p in points]
-        for name, points in series.items()
-    }
-    return MetricSeries(service=service, step_seconds=timeline.step_seconds, series=floored)
+    return MetricSeries(service=service, step_seconds=timeline.step_seconds, series=series)

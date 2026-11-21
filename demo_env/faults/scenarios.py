@@ -8,18 +8,10 @@ from __future__ import annotations
 
 import random
 from collections.abc import Callable
+from dataclasses import dataclass
 from datetime import timedelta
 
 from agents.schemas import FixClass, RootCause
-from demo_env.faults.base import Built, make_deploy
-from demo_env.faults.hard_scenarios import h1_red_herring_deploy, h3_log_injection
-from demo_env.faults.infra_scenarios import (
-    s04_dependency_timeout,
-    s05_disk_full,
-    s06_config_typo,
-    s07_cpu_batch_job,
-    s08_expired_cert,
-)
 from demo_env.faults.render import (
     LogWriter,
     Timeline,
@@ -27,14 +19,47 @@ from demo_env.faults.render import (
     alert,
     curve,
     dumps_series,
+    sha,
     utc,
 )
 from demo_env.models import (
+    Deploy,
     Incident,
     MetricName,
+    MetricSeries,
     MustFind,
     Truth,
 )
+
+
+@dataclass(frozen=True)
+class Built:
+    incident: Incident
+    truth: Truth
+    writer: LogWriter
+    metrics: dict[str, MetricSeries]
+    deploys: list[Deploy]
+
+
+def _deploy(
+    rng: random.Random,
+    *,
+    deploy_id: str,
+    service: str,
+    ts: str,
+    author: str,
+    summary: str,
+    diff: str,
+) -> Deploy:
+    return Deploy(
+        deploy_id=deploy_id,
+        service=service,
+        ts=utc(ts),
+        commit=sha(rng)[:7],
+        author=author,
+        summary=summary,
+        diff=diff,
+    )
 
 
 def s01_bad_deploy_env_var() -> Built:
@@ -125,7 +150,7 @@ def s01_bad_deploy_env_var() -> Built:
         ),
     }
 
-    deploy = make_deploy(
+    deploy = _deploy(
         rng,
         deploy_id="dpl-4f21",
         service="checkout-api",
@@ -268,7 +293,7 @@ def s02_memory_leak() -> Built:
         ),
     }
 
-    deploy = make_deploy(
+    deploy = _deploy(
         rng,
         deploy_id="dpl-31aa",
         service="search-api",
@@ -423,7 +448,7 @@ def s03_slow_query_missing_index() -> Built:
         ),
     }
 
-    deploy = make_deploy(
+    deploy = _deploy(
         rng,
         deploy_id="dpl-88c0",
         service="web",
@@ -470,11 +495,4 @@ SCENARIOS: dict[str, Callable[[], Built]] = {
     "S01_bad_deploy_env_var": s01_bad_deploy_env_var,
     "S02_memory_leak": s02_memory_leak,
     "S03_slow_query_missing_index": s03_slow_query_missing_index,
-    "S04_dependency_timeout": s04_dependency_timeout,
-    "S05_disk_full": s05_disk_full,
-    "S06_config_typo": s06_config_typo,
-    "S07_cpu_batch_job": s07_cpu_batch_job,
-    "S08_expired_cert": s08_expired_cert,
-    "H1_red_herring_deploy": h1_red_herring_deploy,
-    "H3_log_injection": h3_log_injection,
 }
