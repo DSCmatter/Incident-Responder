@@ -182,7 +182,7 @@ All model calls go through `llm/client.py`. No agent or tool imports a provider 
 
 - **Cache:** key is a hash of the system prompt, messages, tool schemas, temperature and output limit. It excludes the model and backend on purpose, so a transcript recorded on one backend replays on another and CI can replay without a key. A cache hit costs no quota, is logged, and still counts as a turn.
 - **Budget:** derived from the ledger, never stored. Each call reserves a row in SQLite before the request, and spend today is `SUM(quota_spent)` for that backend, so a crash wastes at most one call. At the limit, move to the next backend; when every backend is at its limit, raise `QuotaExhausted`.
-- **Fallback chain:** Gemini free tier, OpenRouter free models, local Ollama. Configured in `config.yaml`.
+- **Fallback chain:** local Ollama, OpenRouter free models, Gemini free tier, chosen by the T03 smoke test (see RESULTS.md). Configured in `config.yaml`.
 - **Per-call log:** model, tokens in and out, latency, tokens per second, cost-equivalent, cache hit, agent name.
 - **Modes:** `live`, `record` (call and cache), `replay` (cache only; a miss is an error). CI uses `replay`.
 
@@ -211,7 +211,7 @@ routing:
   runbook_score_threshold: 0.75     # tune on dev split only
 llm:
   mode: live                        # live | record | replay
-  chain: [gemini, openrouter, ollama]
+  chain: [ollama, openrouter, gemini]
   daily_budget: {gemini: 200, openrouter: 45, ollama: unlimited}
 rag:
   k: 5

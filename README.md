@@ -52,7 +52,7 @@ make trace
 
 ## Free-tier design
 
-All model calls go through one client with caching, a daily call budget and a fallback chain (Gemini free tier, OpenRouter free models, local Ollama). Tests run on cached responses. See [PLAN.md](PLAN.md).
+All model calls go through one client with caching, a daily call budget and a fallback chain (local Ollama, OpenRouter free models, Gemini free tier). Tests run on cached responses. See [PLAN.md](PLAN.md).
 
 ## Safety
 
