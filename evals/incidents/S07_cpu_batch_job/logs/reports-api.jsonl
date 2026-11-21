@@ -1,0 +1,330 @@
+{"ts":"2026-11-18T08:00:01Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=60 trace=bf9083c3ec20"}
+{"ts":"2026-11-18T08:00:54Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=82 trace=eb36e2aae5ac"}
+{"ts":"2026-11-18T08:01:13Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=135 trace=1caf4e472eab"}
+{"ts":"2026-11-18T08:01:31Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=26 trace=c42a47910928"}
+{"ts":"2026-11-18T08:01:47Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=94 trace=467daf3947c6"}
+{"ts":"2026-11-18T08:02:15Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=65 trace=479a9cec814f"}
+{"ts":"2026-11-18T08:02:21Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=101 trace=71b7755ca70c"}
+{"ts":"2026-11-18T08:02:45Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=67 trace=dfc69c8a3e5c"}
+{"ts":"2026-11-18T08:02:51Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=97 trace=7454d3eae442"}
+{"ts":"2026-11-18T08:03:32Z","level":"info","msg":"method=GET path=/v1/reports/summary status=304 dur_ms=103 trace=4dbd56129602"}
+{"ts":"2026-11-18T08:03:58Z","level":"info","msg":"method=GET path=/v1/reports/daily status=304 dur_ms=54 trace=cf7976f5668f"}
+{"ts":"2026-11-18T08:04:20Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=43 trace=f70e8923bfca"}
+{"ts":"2026-11-18T08:04:32Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=56 trace=289c20628f65"}
+{"ts":"2026-11-18T08:04:32Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=99 trace=ae08ce41dd03"}
+{"ts":"2026-11-18T08:04:46Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=18 trace=dc140aef96d6"}
+{"ts":"2026-11-18T08:05:00Z","level":"info","msg":"scheduler: next run monthly-export at 2026-11-18T09:00:00Z cron='0 9 18 * *'"}
+{"ts":"2026-11-18T08:05:30Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=22 trace=3a7b89f7560d"}
+{"ts":"2026-11-18T08:05:46Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=45 trace=2e005ddb17cd"}
+{"ts":"2026-11-18T08:06:02Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=112 trace=987350d03a0e"}
+{"ts":"2026-11-18T08:06:33Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=55 trace=83a654c93727"}
+{"ts":"2026-11-18T08:06:36Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=94 trace=7e8695541dfc"}
+{"ts":"2026-11-18T08:07:02Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=26 trace=f51803f52755"}
+{"ts":"2026-11-18T08:07:34Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=61 trace=c65d1250aa55"}
+{"ts":"2026-11-18T08:07:48Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=123 trace=06e062f1759e"}
+{"ts":"2026-11-18T08:08:00Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=86 trace=c931bbd8d4e2"}
+{"ts":"2026-11-18T08:08:22Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=47 trace=edcdaa762bdd"}
+{"ts":"2026-11-18T08:08:23Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=133 trace=4aad5554e221"}
+{"ts":"2026-11-18T08:08:46Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=95 trace=acb549d921c3"}
+{"ts":"2026-11-18T08:09:32Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=115 trace=357c6b7ecbc4"}
+{"ts":"2026-11-18T08:09:39Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=108 trace=edf5d20f4450"}
+{"ts":"2026-11-18T08:10:00Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=56 trace=01696c0f7f4f"}
+{"ts":"2026-11-18T08:10:03Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=117 trace=00752c59612d"}
+{"ts":"2026-11-18T08:10:32Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=120 trace=a6bd4890cfc0"}
+{"ts":"2026-11-18T08:11:27Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=45 trace=58ff76b6c77c"}
+{"ts":"2026-11-18T08:11:32Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=134 trace=04208970d74f"}
+{"ts":"2026-11-18T08:11:44Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=64 trace=951075982db6"}
+{"ts":"2026-11-18T08:11:54Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=94 trace=3f555c9ffed8"}
+{"ts":"2026-11-18T08:12:44Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=24 trace=f3045ccbb53a"}
+{"ts":"2026-11-18T08:13:10Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=119 trace=0e6817bb916b"}
+{"ts":"2026-11-18T08:13:10Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=35 trace=1921bd05666c"}
+{"ts":"2026-11-18T08:13:25Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=75 trace=d3696c45e31f"}
+{"ts":"2026-11-18T08:13:26Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=102 trace=8c3d7c952182"}
+{"ts":"2026-11-18T08:13:53Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=74 trace=a29d1b974324"}
+{"ts":"2026-11-18T08:14:01Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=140 trace=1a18283a3634"}
+{"ts":"2026-11-18T08:15:03Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=101 trace=c6c8d0fadd45"}
+{"ts":"2026-11-18T08:15:31Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=114 trace=5ddbd94d05b0"}
+{"ts":"2026-11-18T08:15:56Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=118 trace=cdc995af8c22"}
+{"ts":"2026-11-18T08:15:58Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=78 trace=f806768632b5"}
+{"ts":"2026-11-18T08:16:35Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=24 trace=b57f806f64af"}
+{"ts":"2026-11-18T08:16:41Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=21 trace=f105644c978f"}
+{"ts":"2026-11-18T08:16:44Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=105 trace=de9fe5893c09"}
+{"ts":"2026-11-18T08:17:03Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=31 trace=d887088312ec"}
+{"ts":"2026-11-18T08:17:31Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=114 trace=70085443e691"}
+{"ts":"2026-11-18T08:17:51Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=128 trace=2babe1b9e0aa"}
+{"ts":"2026-11-18T08:18:12Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=30 trace=53c70c9a83ea"}
+{"ts":"2026-11-18T08:18:24Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=66 trace=ee34cb920f51"}
+{"ts":"2026-11-18T08:18:37Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=74 trace=ff95880e35b5"}
+{"ts":"2026-11-18T08:19:04Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=92 trace=fd77b07533ac"}
+{"ts":"2026-11-18T08:19:08Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=101 trace=e26a9314df23"}
+{"ts":"2026-11-18T08:20:04Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=76 trace=cd4448f70c48"}
+{"ts":"2026-11-18T08:20:18Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=75 trace=8cf97d08b9b0"}
+{"ts":"2026-11-18T08:20:22Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=90 trace=6958c1d128a0"}
+{"ts":"2026-11-18T08:21:02Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=47 trace=2a4a15150960"}
+{"ts":"2026-11-18T08:21:02Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=52 trace=0929f7b4b6d6"}
+{"ts":"2026-11-18T08:21:31Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=57 trace=9edde2d72547"}
+{"ts":"2026-11-18T08:21:46Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=107 trace=68e59cff3e0e"}
+{"ts":"2026-11-18T08:22:08Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=83 trace=9f8939376892"}
+{"ts":"2026-11-18T08:22:20Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=81 trace=a2ce71d9dc8d"}
+{"ts":"2026-11-18T08:22:51Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=126 trace=363e88277123"}
+{"ts":"2026-11-18T08:23:13Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=98 trace=84bbc78fcff4"}
+{"ts":"2026-11-18T08:23:33Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=39 trace=a659cc0b4f5b"}
+{"ts":"2026-11-18T08:23:37Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=130 trace=177ed61392c1"}
+{"ts":"2026-11-18T08:24:10Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=72 trace=98320d8e8bca"}
+{"ts":"2026-11-18T08:24:18Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=88 trace=68923ba242a3"}
+{"ts":"2026-11-18T08:24:41Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=90 trace=a73d5e123884"}
+{"ts":"2026-11-18T08:25:13Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=123 trace=13f5afd7731b"}
+{"ts":"2026-11-18T08:25:25Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=26 trace=42be11cab1e6"}
+{"ts":"2026-11-18T08:25:44Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=79 trace=78ef692afdd6"}
+{"ts":"2026-11-18T08:26:12Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=81 trace=7311e8cd0042"}
+{"ts":"2026-11-18T08:26:40Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=47 trace=69f73dc99996"}
+{"ts":"2026-11-18T08:26:42Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=33 trace=96582d5c4563"}
+{"ts":"2026-11-18T08:27:04Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=112 trace=4c5872d88e48"}
+{"ts":"2026-11-18T08:27:09Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=70 trace=870b8b06357d"}
+{"ts":"2026-11-18T08:27:41Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=101 trace=eca1c557d1c3"}
+{"ts":"2026-11-18T08:28:10Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=115 trace=b089577b1f63"}
+{"ts":"2026-11-18T08:28:25Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=64 trace=9bcb6936d262"}
+{"ts":"2026-11-18T08:28:48Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=62 trace=09701316a8c9"}
+{"ts":"2026-11-18T08:28:54Z","level":"info","msg":"method=GET path=/v1/reports/daily status=304 dur_ms=76 trace=54335b0eb522"}
+{"ts":"2026-11-18T08:29:12Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=37 trace=a3af5fb5df12"}
+{"ts":"2026-11-18T08:29:46Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=103 trace=991d14e3ed06"}
+{"ts":"2026-11-18T08:30:01Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=48 trace=8ed69ea263d2"}
+{"ts":"2026-11-18T08:30:50Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=74 trace=d2d598456708"}
+{"ts":"2026-11-18T08:30:53Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=63 trace=b13397af1762"}
+{"ts":"2026-11-18T08:31:08Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=87 trace=772e8d4ec9e2"}
+{"ts":"2026-11-18T08:31:15Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=72 trace=aabf1fedbb11"}
+{"ts":"2026-11-18T08:31:41Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=95 trace=f93f592e6424"}
+{"ts":"2026-11-18T08:31:53Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=126 trace=eaef11254b7f"}
+{"ts":"2026-11-18T08:32:43Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=73 trace=511cfcb8e617"}
+{"ts":"2026-11-18T08:32:45Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=108 trace=4d7e8d4489e1"}
+{"ts":"2026-11-18T08:33:15Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=49 trace=0acfc06fee75"}
+{"ts":"2026-11-18T08:33:38Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=18 trace=f4dcde9b75ea"}
+{"ts":"2026-11-18T08:34:04Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=61 trace=1339f61018c2"}
+{"ts":"2026-11-18T08:34:14Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=59 trace=79cf047061cf"}
+{"ts":"2026-11-18T08:34:24Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=83 trace=6ffa7ff55db1"}
+{"ts":"2026-11-18T08:35:15Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=21 trace=651d96fd2843"}
+{"ts":"2026-11-18T08:35:26Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=22 trace=76d040aaf6a5"}
+{"ts":"2026-11-18T08:35:33Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=120 trace=b1f6372d9866"}
+{"ts":"2026-11-18T08:35:46Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=60 trace=75a7c95c3641"}
+{"ts":"2026-11-18T08:36:04Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=37 trace=aeadff2989b7"}
+{"ts":"2026-11-18T08:36:07Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=111 trace=f799e0924a40"}
+{"ts":"2026-11-18T08:37:08Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=25 trace=135caa74e853"}
+{"ts":"2026-11-18T08:37:10Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=53 trace=5baf6678d6c6"}
+{"ts":"2026-11-18T08:37:31Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=23 trace=7892f7d6a3c8"}
+{"ts":"2026-11-18T08:38:02Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=20 trace=34c0a834cac4"}
+{"ts":"2026-11-18T08:38:20Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=116 trace=f6229e3f9d63"}
+{"ts":"2026-11-18T08:38:30Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=62 trace=318033d2a701"}
+{"ts":"2026-11-18T08:39:07Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=40 trace=9accf6a6910c"}
+{"ts":"2026-11-18T08:39:15Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=38 trace=6946c901d076"}
+{"ts":"2026-11-18T08:39:40Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=96 trace=8fc043884486"}
+{"ts":"2026-11-18T08:39:50Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=29 trace=ddff828431be"}
+{"ts":"2026-11-18T08:39:59Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=37 trace=02c01906b3ec"}
+{"ts":"2026-11-18T08:40:38Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=100 trace=9f8a38c858cb"}
+{"ts":"2026-11-18T08:40:52Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=65 trace=a515f769a92d"}
+{"ts":"2026-11-18T08:40:55Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=110 trace=7a28ae15c34e"}
+{"ts":"2026-11-18T08:41:34Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=29 trace=493136789845"}
+{"ts":"2026-11-18T08:41:38Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=86 trace=7267788add92"}
+{"ts":"2026-11-18T08:42:25Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=131 trace=dd9e1b7371c8"}
+{"ts":"2026-11-18T08:42:25Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=38 trace=31cdb94859d6"}
+{"ts":"2026-11-18T08:42:31Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=62 trace=f11b0a9c59eb"}
+{"ts":"2026-11-18T08:42:50Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=24 trace=684034f435bd"}
+{"ts":"2026-11-18T08:43:01Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=130 trace=c1807864b546"}
+{"ts":"2026-11-18T08:43:49Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=114 trace=139eff156407"}
+{"ts":"2026-11-18T08:44:07Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=18 trace=0d8504f79d15"}
+{"ts":"2026-11-18T08:44:38Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=68 trace=53dd2431d99c"}
+{"ts":"2026-11-18T08:44:39Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=138 trace=a75cffbc7fa3"}
+{"ts":"2026-11-18T08:45:00Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=93 trace=bf252cf0c481"}
+{"ts":"2026-11-18T08:45:23Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=33 trace=9612eff3a332"}
+{"ts":"2026-11-18T08:45:45Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=53 trace=4f13d749b581"}
+{"ts":"2026-11-18T08:46:15Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=99 trace=586110deae4a"}
+{"ts":"2026-11-18T08:46:55Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=103 trace=b1b8982cd15f"}
+{"ts":"2026-11-18T08:47:18Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=40 trace=60bedcb8fbfc"}
+{"ts":"2026-11-18T08:47:19Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=20 trace=be106f034c65"}
+{"ts":"2026-11-18T08:47:27Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=121 trace=65238e259bfd"}
+{"ts":"2026-11-18T08:48:12Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=48 trace=e3df7d636735"}
+{"ts":"2026-11-18T08:48:17Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=63 trace=09dfd7eb193d"}
+{"ts":"2026-11-18T08:48:58Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=27 trace=a90530e19e1e"}
+{"ts":"2026-11-18T08:49:16Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=67 trace=fb503f8d6984"}
+{"ts":"2026-11-18T08:49:19Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=116 trace=41a7e0017759"}
+{"ts":"2026-11-18T08:49:46Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=64 trace=805bc5c1c159"}
+{"ts":"2026-11-18T08:50:18Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=102 trace=8068f5e97080"}
+{"ts":"2026-11-18T08:50:30Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=64 trace=5f1ee24bfb07"}
+{"ts":"2026-11-18T08:50:38Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=90 trace=49edab3e1790"}
+{"ts":"2026-11-18T08:51:11Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=89 trace=0e7a953a3fb1"}
+{"ts":"2026-11-18T08:51:34Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=126 trace=08aac4877f31"}
+{"ts":"2026-11-18T08:51:35Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=64 trace=d3b108df2142"}
+{"ts":"2026-11-18T08:51:42Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=78 trace=c09052de136a"}
+{"ts":"2026-11-18T08:51:50Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=56 trace=02d64d0f2588"}
+{"ts":"2026-11-18T08:52:17Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=65 trace=a8a17d1d5c5c"}
+{"ts":"2026-11-18T08:52:47Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=33 trace=bcd7c6fa29f0"}
+{"ts":"2026-11-18T08:53:01Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=94 trace=bd8b0d3c0c8f"}
+{"ts":"2026-11-18T08:53:20Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=116 trace=3c18c99ddaea"}
+{"ts":"2026-11-18T08:53:37Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=69 trace=9ecd69ebe194"}
+{"ts":"2026-11-18T08:54:15Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=74 trace=0569f94064ea"}
+{"ts":"2026-11-18T08:54:26Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=137 trace=a121363851cf"}
+{"ts":"2026-11-18T08:54:42Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=81 trace=4560864152f6"}
+{"ts":"2026-11-18T08:55:38Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=90 trace=2d977bd95a58"}
+{"ts":"2026-11-18T08:55:47Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=49 trace=7c619842ca04"}
+{"ts":"2026-11-18T08:55:49Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=67 trace=31133ed42dda"}
+{"ts":"2026-11-18T08:56:01Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=35 trace=b4ec858f498c"}
+{"ts":"2026-11-18T08:56:21Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=65 trace=f8ac65aa28cf"}
+{"ts":"2026-11-18T08:56:49Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=126 trace=00a7f1a8466f"}
+{"ts":"2026-11-18T08:57:18Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=65 trace=b0fbb4385571"}
+{"ts":"2026-11-18T08:57:26Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=45 trace=18152c2863f8"}
+{"ts":"2026-11-18T08:57:34Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=86 trace=40418d2c7965"}
+{"ts":"2026-11-18T08:57:49Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=52 trace=6dbe92a4a1c1"}
+{"ts":"2026-11-18T08:58:06Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=40 trace=4952e656cd5c"}
+{"ts":"2026-11-18T08:58:41Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=139 trace=d26cae1760e9"}
+{"ts":"2026-11-18T08:58:50Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=22 trace=a88d5999c9b7"}
+{"ts":"2026-11-18T08:59:54Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=27 trace=ae20039bcf9d"}
+{"ts":"2026-11-18T08:59:55Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=32 trace=e6796cbfc78f"}
+{"ts":"2026-11-18T08:59:58Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=22 trace=1f15e400624e"}
+{"ts":"2026-11-18T09:00:00Z","level":"info","msg":"scheduler: started job monthly-export workers=8 est_rows=2100000 replicas=3"}
+{"ts":"2026-11-18T09:00:27Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=53 trace=04f4ef0a7d3a"}
+{"ts":"2026-11-18T09:00:51Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=68 trace=8fea72dee466"}
+{"ts":"2026-11-18T09:01:00Z","level":"warn","msg":"request queue depth 347 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:01:05Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=96 trace=2b36c64c8451"}
+{"ts":"2026-11-18T09:01:35Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=100 trace=f80cc5fb21e1"}
+{"ts":"2026-11-18T09:02:00Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:02:01Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=37 trace=42697fb7a6f3"}
+{"ts":"2026-11-18T09:02:13Z","level":"warn","msg":"request queue depth 470 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:02:18Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=49 trace=ed55e68f8e40"}
+{"ts":"2026-11-18T09:02:23Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=102 trace=1353234c9b03"}
+{"ts":"2026-11-18T09:02:51Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=140 trace=27c3e9b85296"}
+{"ts":"2026-11-18T09:02:57Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:03:03Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=59 trace=b59a448e9dc0"}
+{"ts":"2026-11-18T09:03:16Z","level":"warn","msg":"request queue depth 350 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:03:23Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=68 trace=7b56d76070c6"}
+{"ts":"2026-11-18T09:03:54Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:04:16Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=73 trace=e71183856948"}
+{"ts":"2026-11-18T09:04:18Z","level":"warn","msg":"request queue depth 380 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:04:24Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=140 trace=c3309e1d90a2"}
+{"ts":"2026-11-18T09:04:31Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=28 trace=c2c135c650f1"}
+{"ts":"2026-11-18T09:04:36Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=62 trace=8fa39d98836d"}
+{"ts":"2026-11-18T09:04:51Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:05:00Z","level":"info","msg":"monthly-export progress 9% rows=190000"}
+{"ts":"2026-11-18T09:05:14Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=93 trace=dada7c0a3954"}
+{"ts":"2026-11-18T09:05:19Z","level":"warn","msg":"request queue depth 383 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:05:21Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=36 trace=37f095e0e5ce"}
+{"ts":"2026-11-18T09:05:30Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=121 trace=fee61e9af991"}
+{"ts":"2026-11-18T09:05:42Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:06:12Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=41 trace=e2a3ebc7de23"}
+{"ts":"2026-11-18T09:06:27Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=41 trace=002adec0a36b"}
+{"ts":"2026-11-18T09:06:33Z","level":"warn","msg":"request queue depth 407 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:06:34Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:06:53Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=81 trace=8b3c1290ec29"}
+{"ts":"2026-11-18T09:07:17Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=118 trace=11520371604d"}
+{"ts":"2026-11-18T09:07:33Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:07:47Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=106 trace=397440f1fbff"}
+{"ts":"2026-11-18T09:07:47Z","level":"warn","msg":"request queue depth 350 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:07:50Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=96 trace=2f3516a4e781"}
+{"ts":"2026-11-18T09:08:02Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=76 trace=f51357e79f7e"}
+{"ts":"2026-11-18T09:08:21Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=22 trace=25dd01715615"}
+{"ts":"2026-11-18T09:08:27Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:08:59Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=140 trace=4792e570da9c"}
+{"ts":"2026-11-18T09:08:59Z","level":"warn","msg":"request queue depth 447 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:09:05Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=138 trace=275cccdb15ae"}
+{"ts":"2026-11-18T09:09:19Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=133 trace=1b8d9283530e"}
+{"ts":"2026-11-18T09:09:21Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:09:33Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=38 trace=4a2828e2ad84"}
+{"ts":"2026-11-18T09:09:55Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=78 trace=72215b92384e"}
+{"ts":"2026-11-18T09:10:00Z","level":"info","msg":"monthly-export progress 17% rows=360000"}
+{"ts":"2026-11-18T09:10:11Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:10:12Z","level":"warn","msg":"request queue depth 400 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:10:47Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=81 trace=ef2d37943a48"}
+{"ts":"2026-11-18T09:10:56Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=33 trace=32efdbf0a0b0"}
+{"ts":"2026-11-18T09:10:58Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=32 trace=9a15681c0633"}
+{"ts":"2026-11-18T09:11:05Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=63 trace=9d6f671537c1"}
+{"ts":"2026-11-18T09:11:11Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:11:27Z","level":"warn","msg":"request queue depth 305 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:11:38Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=31 trace=8e14796c7e80"}
+{"ts":"2026-11-18T09:12:06Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=54 trace=bd6e8379fbaa"}
+{"ts":"2026-11-18T09:12:09Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:12:11Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=63 trace=a1ec0596f871"}
+{"ts":"2026-11-18T09:12:37Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=53 trace=1e54004ebc04"}
+{"ts":"2026-11-18T09:12:38Z","level":"warn","msg":"request queue depth 399 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:13:00Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=115 trace=d6ee76bc4d1d"}
+{"ts":"2026-11-18T09:13:08Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:13:14Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=74 trace=ee536b64f827"}
+{"ts":"2026-11-18T09:13:46Z","level":"warn","msg":"request queue depth 477 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:13:49Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=99 trace=9f27bbae0882"}
+{"ts":"2026-11-18T09:13:56Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=107 trace=6cd7850b4975"}
+{"ts":"2026-11-18T09:14:04Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:14:39Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=39 trace=20f8d3956aea"}
+{"ts":"2026-11-18T09:14:51Z","level":"warn","msg":"request queue depth 503 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:14:55Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:15:00Z","level":"info","msg":"monthly-export progress 25% rows=530000"}
+{"ts":"2026-11-18T09:15:07Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=96 trace=a538f842dc05"}
+{"ts":"2026-11-18T09:15:07Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=106 trace=a6d7b6cc2331"}
+{"ts":"2026-11-18T09:15:08Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=76 trace=b963e6fdb4dc"}
+{"ts":"2026-11-18T09:15:47Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:16:02Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=137 trace=032ee40e3733"}
+{"ts":"2026-11-18T09:16:03Z","level":"warn","msg":"request queue depth 374 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:16:04Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=96 trace=3d91431c86a6"}
+{"ts":"2026-11-18T09:16:07Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=72 trace=d36300ac1acc"}
+{"ts":"2026-11-18T09:16:25Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=21 trace=90f0c03f34e0"}
+{"ts":"2026-11-18T09:16:39Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:17:02Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=66 trace=e732a40be206"}
+{"ts":"2026-11-18T09:17:05Z","level":"warn","msg":"request queue depth 504 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:17:31Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:17:37Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=91 trace=07ca3af4ea4a"}
+{"ts":"2026-11-18T09:17:51Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=68 trace=cce79f00d1e4"}
+{"ts":"2026-11-18T09:18:07Z","level":"warn","msg":"request queue depth 368 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:18:14Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=132 trace=183070d82797"}
+{"ts":"2026-11-18T09:18:22Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=38 trace=a51dfebacab8"}
+{"ts":"2026-11-18T09:18:29Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:18:33Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=49 trace=4f3ca8fb55e0"}
+{"ts":"2026-11-18T09:19:10Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=72 trace=7f58fd9a8f21"}
+{"ts":"2026-11-18T09:19:13Z","level":"warn","msg":"request queue depth 496 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:19:23Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:19:30Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=123 trace=5e1d2f19c837"}
+{"ts":"2026-11-18T09:19:52Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=140 trace=6a8b0c12bd88"}
+{"ts":"2026-11-18T09:20:00Z","level":"info","msg":"monthly-export progress 33% rows=700000"}
+{"ts":"2026-11-18T09:20:14Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=120 trace=7c1c63d2b4fa"}
+{"ts":"2026-11-18T09:20:15Z","level":"warn","msg":"request queue depth 414 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:20:19Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:20:29Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=19 trace=28cdabcf145d"}
+{"ts":"2026-11-18T09:20:47Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=25 trace=560e54961fd7"}
+{"ts":"2026-11-18T09:21:14Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:21:16Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=132 trace=664a56a3020e"}
+{"ts":"2026-11-18T09:21:27Z","level":"warn","msg":"request queue depth 348 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:21:59Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=18 trace=9e842a98a8a0"}
+{"ts":"2026-11-18T09:22:06Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:22:15Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=135 trace=007ab727a7a8"}
+{"ts":"2026-11-18T09:22:22Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=82 trace=3b904c4e0d5d"}
+{"ts":"2026-11-18T09:22:32Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=51 trace=f2e75bf118fe"}
+{"ts":"2026-11-18T09:22:41Z","level":"warn","msg":"request queue depth 373 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:22:59Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:23:05Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=68 trace=21a14820f64a"}
+{"ts":"2026-11-18T09:23:10Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=124 trace=5c53bdd83b87"}
+{"ts":"2026-11-18T09:23:16Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=89 trace=c055cc9f7cfa"}
+{"ts":"2026-11-18T09:23:42Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=79 trace=6623d3e9c832"}
+{"ts":"2026-11-18T09:23:53Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=21 trace=f33f0d558daa"}
+{"ts":"2026-11-18T09:23:54Z","level":"warn","msg":"request queue depth 476 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:23:56Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:24:28Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=71 trace=6b587549c4f1"}
+{"ts":"2026-11-18T09:24:30Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=123 trace=6cf7d3e2f29b"}
+{"ts":"2026-11-18T09:24:50Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=133 trace=75c4dfa69184"}
+{"ts":"2026-11-18T09:24:54Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:25:00Z","level":"info","msg":"monthly-export progress 41% rows=870000"}
+{"ts":"2026-11-18T09:25:00Z","level":"warn","msg":"request queue depth 481 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:25:07Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=116 trace=8861a68184d1"}
+{"ts":"2026-11-18T09:25:48Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:26:03Z","level":"warn","msg":"request queue depth 344 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:26:10Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=133 trace=b7adcead3597"}
+{"ts":"2026-11-18T09:26:39Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=56 trace=205483aaa686"}
+{"ts":"2026-11-18T09:26:43Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:26:47Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=37 trace=edf626bdc7e7"}
+{"ts":"2026-11-18T09:26:50Z","level":"info","msg":"method=GET path=/v1/reports/summary status=200 dur_ms=75 trace=cc45856ca729"}
+{"ts":"2026-11-18T09:27:06Z","level":"warn","msg":"request queue depth 440 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:27:31Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=56 trace=18193c438018"}
+{"ts":"2026-11-18T09:27:35Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:27:36Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=70 trace=65092f2be2ca"}
+{"ts":"2026-11-18T09:27:52Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=45 trace=d8b741070021"}
+{"ts":"2026-11-18T09:27:54Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=110 trace=2523e3d9493d"}
+{"ts":"2026-11-18T09:28:14Z","level":"warn","msg":"request queue depth 362 exceeds 200; shedding low-priority requests"}
+{"ts":"2026-11-18T09:28:24Z","level":"info","msg":"method=GET path=/v1/reports/daily status=200 dur_ms=55 trace=728bb495867b"}
+{"ts":"2026-11-18T09:28:31Z","level":"error","msg":"GET /v1/reports/summary 503 dur_ms=5000 err=queue wait timeout"}
+{"ts":"2026-11-18T09:29:01Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=126 trace=8c76a9845ea5"}
+{"ts":"2026-11-18T09:29:14Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=131 trace=7e496237a272"}
+{"ts":"2026-11-18T09:29:17Z","level":"info","msg":"method=GET path=/healthz status=200 dur_ms=70 trace=182f65cb3aa2"}

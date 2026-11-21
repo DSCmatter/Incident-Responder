@@ -1,0 +1,13 @@
+{
+  "deploys": [
+    {
+      "deploy_id": "dpl-77e2",
+      "service": "auth-api",
+      "ts": "2026-11-14T09:12:00Z",
+      "commit": "294467d",
+      "author": "sana",
+      "summary": "auth: add client_id to token audit log",
+      "diff": "--- a/auth/audit.py\n+++ b/auth/audit.py\n@@ -11,4 +11,5 @@ def log_token(event):\n     fields = {\"sub\": event.sub, \"scope\": event.scope}\n+    fields[\"client_id\"] = event.client_id\n"
+    }
+  ]
+}

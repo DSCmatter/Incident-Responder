@@ -7,12 +7,12 @@ from pathlib import Path
 
 import pytest
 
-from demo_env.faults.render import write_incident
+from demo_env.faults.render import SIGNED_METRICS, write_incident
 from demo_env.faults.scenarios import SCENARIOS
 from demo_env.load import INCIDENTS_DIR, load_split
 from demo_env.models import IncidentFiles
 
-DEV_IDS = ["S01", "S02", "S03"]
+DEV_IDS = ["H1", "H3", "S01", "S02", "S03", "S04", "S05", "S06", "S07", "S08"]
 
 
 @pytest.fixture(scope="module")
@@ -20,7 +20,7 @@ def dev_incidents():
     return load_split("dev")
 
 
-def test_three_dev_incidents_load(dev_incidents) -> None:
+def test_ten_dev_incidents_load(dev_incidents) -> None:
     assert [loaded.incident.id for loaded in dev_incidents] == DEV_IDS
     for loaded in dev_incidents:
         assert loaded.services, f"{loaded.incident.id} has no services"
@@ -82,3 +82,14 @@ def test_regeneration_is_byte_identical(tmp_path: Path) -> None:
             ), f"{path.name} differs from a fresh generation"
             checked += 1
     assert checked >= 5
+
+
+def test_only_signed_metrics_go_below_zero(dev_incidents) -> None:
+    for loaded in dev_incidents:
+        for service in loaded.services:
+            series = loaded.metrics(service)
+            for name, points in (series.series if series else {}).items():
+                if name in SIGNED_METRICS:
+                    continue
+                low = min(point.value for point in points)
+                assert low >= 0, f"{loaded.incident.id} {service}.{name} reaches {low}"

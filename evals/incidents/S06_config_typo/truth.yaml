@@ -1,0 +1,13 @@
+root_cause: misconfiguration
+service: auth-api
+summary: A ConfigMap edit at 10:31 set OIDC_ISSUER to https://login.acme-corp.exmaple, a typo, so auth-api
+  rejects every valid token with an issuer mismatch. No deploy was involved.
+acceptable_fixes:
+- config_change
+- rollback_deploy
+must_find:
+- file: logs/auth-api.jsonl
+  pattern: issuer mismatch
+- file: logs/auth-api.jsonl
+  pattern: resourceVersion=88412
+escalation_ok: false

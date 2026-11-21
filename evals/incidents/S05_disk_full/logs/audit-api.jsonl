@@ -1,0 +1,79 @@
+{"ts":"2026-11-16T02:00:51Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=81 trace=92dbb3c323de"}
+{"ts":"2026-11-16T02:01:58Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=137 trace=32a59f437c43"}
+{"ts":"2026-11-16T02:02:56Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=140 trace=8c358b010eb2"}
+{"ts":"2026-11-16T02:04:24Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=129 trace=b714d9fe2047"}
+{"ts":"2026-11-16T02:05:54Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=47 trace=d8bdad39950a"}
+{"ts":"2026-11-16T02:06:43Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=131 trace=fd6c0e5f1db1"}
+{"ts":"2026-11-16T02:08:02Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=131 trace=1cd95c81a430"}
+{"ts":"2026-11-16T02:09:14Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=95 trace=f25a2fc38fe8"}
+{"ts":"2026-11-16T02:10:58Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=118 trace=6601ad4ceedc"}
+{"ts":"2026-11-16T02:11:22Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=36 trace=283d9cd7d4a4"}
+{"ts":"2026-11-16T02:13:09Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=100 trace=b08f93e9ce2f"}
+{"ts":"2026-11-16T02:14:30Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=74 trace=8630d3465b0c"}
+{"ts":"2026-11-16T02:15:00Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=30 trace=6268ac92aa48"}
+{"ts":"2026-11-16T02:15:00Z","level":"warn","msg":"client 10.0.3.9 closed connection before response was written"}
+{"ts":"2026-11-16T02:16:41Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=44 trace=6bf23f3581ef"}
+{"ts":"2026-11-16T02:17:36Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=93 trace=8256553f68de"}
+{"ts":"2026-11-16T02:19:15Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=69 trace=a26cdf3bfe89"}
+{"ts":"2026-11-16T02:20:06Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=113 trace=2e45304624bf"}
+{"ts":"2026-11-16T02:22:13Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=53 trace=a28b499be4e0"}
+{"ts":"2026-11-16T02:23:08Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=107 trace=f1e11bb65132"}
+{"ts":"2026-11-16T02:24:16Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=93 trace=746248d1a09b"}
+{"ts":"2026-11-16T02:25:29Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=96 trace=fd33d354921e"}
+{"ts":"2026-11-16T02:26:39Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=139 trace=b4de3ad32abe"}
+{"ts":"2026-11-16T02:27:31Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=40 trace=2832f094c005"}
+{"ts":"2026-11-16T02:28:50Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=128 trace=ebdb5bdd8c4f"}
+{"ts":"2026-11-16T02:30:41Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=104 trace=5bbbbaccaacb"}
+{"ts":"2026-11-16T02:32:14Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=105 trace=d5a8017fdf50"}
+{"ts":"2026-11-16T02:33:12Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=62 trace=12f4c6a037fe"}
+{"ts":"2026-11-16T02:34:15Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=54 trace=0e3411fb29ab"}
+{"ts":"2026-11-16T02:35:44Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=44 trace=fca2e33010ce"}
+{"ts":"2026-11-16T02:36:59Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=45 trace=6bcf065936be"}
+{"ts":"2026-11-16T02:37:32Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=131 trace=0e7f0d3b2344"}
+{"ts":"2026-11-16T02:39:28Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=62 trace=f16cd7307368"}
+{"ts":"2026-11-16T02:40:35Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=138 trace=a703255cbfcc"}
+{"ts":"2026-11-16T02:41:36Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=63 trace=8a566d57c742"}
+{"ts":"2026-11-16T02:42:53Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=47 trace=f0d317d16079"}
+{"ts":"2026-11-16T02:44:24Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=49 trace=af034ec08445"}
+{"ts":"2026-11-16T02:45:41Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=94 trace=bb81a5a5bbaa"}
+{"ts":"2026-11-16T02:47:12Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=62 trace=ca91c4936f04"}
+{"ts":"2026-11-16T02:48:20Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=99 trace=8b5fb62f2f51"}
+{"ts":"2026-11-16T02:49:34Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=33 trace=180e26ec77ca"}
+{"ts":"2026-11-16T02:50:37Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=21 trace=5240301e25c7"}
+{"ts":"2026-11-16T02:51:52Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=43 trace=6331763d6456"}
+{"ts":"2026-11-16T02:52:42Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=138 trace=b38cfb6a88ab"}
+{"ts":"2026-11-16T02:54:29Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=99 trace=0616cc89029f"}
+{"ts":"2026-11-16T02:55:32Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=117 trace=17096daf0541"}
+{"ts":"2026-11-16T02:57:12Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=69 trace=5d76e5ddebeb"}
+{"ts":"2026-11-16T02:57:46Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=133 trace=885c0b7e69e1"}
+{"ts":"2026-11-16T02:59:26Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=97 trace=dd486932a55b"}
+{"ts":"2026-11-16T03:00:37Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=51 trace=4e801ff96dc6"}
+{"ts":"2026-11-16T03:01:33Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=71 trace=6f1de94e1ecd"}
+{"ts":"2026-11-16T03:03:00Z","level":"warn","msg":"ledger ack lag 20s for /v1/audit writes"}
+{"ts":"2026-11-16T03:03:24Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=112 trace=419f31e6f5cf"}
+{"ts":"2026-11-16T03:04:15Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=137 trace=f830c9beed58"}
+{"ts":"2026-11-16T03:05:51Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=126 trace=ab31c128a524"}
+{"ts":"2026-11-16T03:07:12Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=96 trace=305caf05a833"}
+{"ts":"2026-11-16T03:07:36Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=91 trace=95a7b0d1ef9a"}
+{"ts":"2026-11-16T03:08:00Z","level":"warn","msg":"ledger ack lag 34s for /v1/audit writes"}
+{"ts":"2026-11-16T03:09:20Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=71 trace=7e4bdae9176c"}
+{"ts":"2026-11-16T03:10:06Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=82 trace=ccefa04cfb83"}
+{"ts":"2026-11-16T03:11:28Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=45 trace=5d293a6f0a69"}
+{"ts":"2026-11-16T03:12:34Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=53 trace=2f4ce109c287"}
+{"ts":"2026-11-16T03:13:00Z","level":"warn","msg":"ledger ack lag 48s for /v1/audit writes"}
+{"ts":"2026-11-16T03:13:53Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=115 trace=04c39c2b81b8"}
+{"ts":"2026-11-16T03:15:34Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=120 trace=eb2fa66500d4"}
+{"ts":"2026-11-16T03:16:37Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=40 trace=e1e441ae3252"}
+{"ts":"2026-11-16T03:18:00Z","level":"warn","msg":"ledger ack lag 62s for /v1/audit writes"}
+{"ts":"2026-11-16T03:18:18Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=57 trace=d5e42cc55652"}
+{"ts":"2026-11-16T03:19:03Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=109 trace=6ee2bc2b1029"}
+{"ts":"2026-11-16T03:20:55Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=111 trace=5cb0e753ccae"}
+{"ts":"2026-11-16T03:21:17Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=89 trace=29bde9247819"}
+{"ts":"2026-11-16T03:23:00Z","level":"warn","msg":"ledger ack lag 76s for /v1/audit writes"}
+{"ts":"2026-11-16T03:23:15Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=119 trace=e250c789cb65"}
+{"ts":"2026-11-16T03:24:21Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=30 trace=510720af6e78"}
+{"ts":"2026-11-16T03:25:12Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=37 trace=c947309a49e4"}
+{"ts":"2026-11-16T03:26:30Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=94 trace=16ba3a0c33ab"}
+{"ts":"2026-11-16T03:27:58Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=83 trace=12d2ef79c0d4"}
+{"ts":"2026-11-16T03:28:00Z","level":"warn","msg":"ledger ack lag 90s for /v1/audit writes"}
+{"ts":"2026-11-16T03:29:14Z","level":"info","msg":"method=GET path=/v1/audit status=200 dur_ms=46 trace=e25006272bdb"}

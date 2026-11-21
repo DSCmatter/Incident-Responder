@@ -1,0 +1,169 @@
+{"ts":"2026-11-17T10:00:27Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=22 trace=b9018ad6bed8"}
+{"ts":"2026-11-17T10:01:16Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=121 trace=aeeafccbd1c5"}
+{"ts":"2026-11-17T10:01:33Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=135 trace=552c7543bd0f"}
+{"ts":"2026-11-17T10:02:09Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=104 trace=c731821ae1a1"}
+{"ts":"2026-11-17T10:03:13Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=104 trace=a1bba2bc1941"}
+{"ts":"2026-11-17T10:03:27Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=21 trace=7a867dfa1b49"}
+{"ts":"2026-11-17T10:04:01Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=106 trace=baa74d72e597"}
+{"ts":"2026-11-17T10:04:47Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=85 trace=602a8a30c7f8"}
+{"ts":"2026-11-17T10:05:26Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=126 trace=b719d8e1e576"}
+{"ts":"2026-11-17T10:06:53Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=77 trace=c78aefe0e8b5"}
+{"ts":"2026-11-17T10:07:25Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=114 trace=eaae617513c8"}
+{"ts":"2026-11-17T10:07:46Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=136 trace=3a9885bed148"}
+{"ts":"2026-11-17T10:08:34Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=66 trace=22d951904327"}
+{"ts":"2026-11-17T10:08:41Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=40 trace=b5901297a8b5"}
+{"ts":"2026-11-17T10:09:50Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=140 trace=e2b1749e6554"}
+{"ts":"2026-11-17T10:10:12Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=111 trace=69c78dc8a1cc"}
+{"ts":"2026-11-17T10:11:32Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=53 trace=08a7d999a182"}
+{"ts":"2026-11-17T10:11:49Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=45 trace=d6c0a182676e"}
+{"ts":"2026-11-17T10:12:18Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=104 trace=3e8a5efd52bf"}
+{"ts":"2026-11-17T10:13:07Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=21 trace=47b3d97d4847"}
+{"ts":"2026-11-17T10:14:05Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=102 trace=8b66d98ed1d3"}
+{"ts":"2026-11-17T10:14:06Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=78 trace=dcc3862192c1"}
+{"ts":"2026-11-17T10:15:19Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=134 trace=df60724cd3de"}
+{"ts":"2026-11-17T10:15:37Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=57 trace=a857f6ef7d0a"}
+{"ts":"2026-11-17T10:16:56Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=31 trace=a3879cbdc763"}
+{"ts":"2026-11-17T10:17:36Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=41 trace=5c4e1b3800c0"}
+{"ts":"2026-11-17T10:17:45Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=120 trace=7e8c971529cd"}
+{"ts":"2026-11-17T10:18:41Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=124 trace=e40fa7513aed"}
+{"ts":"2026-11-17T10:19:23Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=118 trace=e5cef56e3464"}
+{"ts":"2026-11-17T10:19:28Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=70 trace=72909e643c5c"}
+{"ts":"2026-11-17T10:20:55Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=67 trace=cb897ca50a9a"}
+{"ts":"2026-11-17T10:21:35Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=52 trace=f509812f747d"}
+{"ts":"2026-11-17T10:21:46Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=34 trace=8ce89775a417"}
+{"ts":"2026-11-17T10:22:39Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=95 trace=965f291a43bd"}
+{"ts":"2026-11-17T10:23:33Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=100 trace=1bdb660daedd"}
+{"ts":"2026-11-17T10:23:51Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=96 trace=9cad714cffd6"}
+{"ts":"2026-11-17T10:24:07Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=70 trace=7d0d9df99c74"}
+{"ts":"2026-11-17T10:25:16Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=107 trace=fe01103e8354"}
+{"ts":"2026-11-17T10:25:33Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=53 trace=c58a4574f9b8"}
+{"ts":"2026-11-17T10:26:03Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=68 trace=fc6732bba4c6"}
+{"ts":"2026-11-17T10:27:25Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=134 trace=a49e90f3a4b7"}
+{"ts":"2026-11-17T10:27:32Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=97 trace=ddf71d40f2d6"}
+{"ts":"2026-11-17T10:28:05Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=113 trace=517bee8f1661"}
+{"ts":"2026-11-17T10:28:51Z","level":"info","msg":"method=GET path=/login status=304 dur_ms=43 trace=1c43917b87f0"}
+{"ts":"2026-11-17T10:30:12Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=35 trace=615857f0e1c8"}
+{"ts":"2026-11-17T10:30:21Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=69 trace=2ebfe3c7904b"}
+{"ts":"2026-11-17T10:30:48Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=45 trace=0aafbc761225"}
+{"ts":"2026-11-17T10:31:50Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-52453"}
+{"ts":"2026-11-17T10:32:01Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=111 trace=32c1b85f3982"}
+{"ts":"2026-11-17T10:32:02Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=101 trace=533efa38bf64"}
+{"ts":"2026-11-17T10:33:24Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=97 trace=26c0126905b2"}
+{"ts":"2026-11-17T10:33:32Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=91 trace=36a031409548"}
+{"ts":"2026-11-17T10:33:35Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-59842"}
+{"ts":"2026-11-17T10:34:41Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=98 trace=2b0c5fcc15a4"}
+{"ts":"2026-11-17T10:34:41Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=22 trace=163d555c6300"}
+{"ts":"2026-11-17T10:35:21Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-47105"}
+{"ts":"2026-11-17T10:36:16Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=116 trace=a6ffb6a2c8e9"}
+{"ts":"2026-11-17T10:36:16Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=120 trace=84a9d93544eb"}
+{"ts":"2026-11-17T10:36:54Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-50853"}
+{"ts":"2026-11-17T10:37:15Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=18 trace=a35d697f4821"}
+{"ts":"2026-11-17T10:37:57Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=103 trace=c6a33d86f60f"}
+{"ts":"2026-11-17T10:38:09Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=21 trace=fd38f0654378"}
+{"ts":"2026-11-17T10:38:43Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-63514"}
+{"ts":"2026-11-17T10:39:20Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=85 trace=4fe284a6ad8f"}
+{"ts":"2026-11-17T10:39:29Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=24 trace=aff7de2edd65"}
+{"ts":"2026-11-17T10:40:05Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=20 trace=e33ce050cf17"}
+{"ts":"2026-11-17T10:40:31Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-75175"}
+{"ts":"2026-11-17T10:40:42Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=127 trace=fd3f9fd9644c"}
+{"ts":"2026-11-17T10:41:25Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=72 trace=72d03c56ff7a"}
+{"ts":"2026-11-17T10:42:13Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-51143"}
+{"ts":"2026-11-17T10:42:56Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=104 trace=0ee0251924d6"}
+{"ts":"2026-11-17T10:43:08Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=76 trace=42aacc1f8d73"}
+{"ts":"2026-11-17T10:43:43Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-98096"}
+{"ts":"2026-11-17T10:44:11Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=52 trace=833dbccfe1c4"}
+{"ts":"2026-11-17T10:44:13Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=105 trace=6918e67a20b5"}
+{"ts":"2026-11-17T10:45:20Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-14498"}
+{"ts":"2026-11-17T10:45:21Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=114 trace=0390a2788b22"}
+{"ts":"2026-11-17T10:45:33Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=20 trace=fbf7b96a9ba6"}
+{"ts":"2026-11-17T10:46:10Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=62 trace=0598b52f7835"}
+{"ts":"2026-11-17T10:46:50Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-14632"}
+{"ts":"2026-11-17T10:47:21Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=95 trace=bfa97a353400"}
+{"ts":"2026-11-17T10:48:10Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=24 trace=fd93e31d7686"}
+{"ts":"2026-11-17T10:48:28Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-51552"}
+{"ts":"2026-11-17T10:48:38Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=81 trace=6ec828daa5cc"}
+{"ts":"2026-11-17T10:49:03Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=42 trace=554ecfd26a43"}
+{"ts":"2026-11-17T10:49:27Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=73 trace=3351b561a5da"}
+{"ts":"2026-11-17T10:50:02Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-90755"}
+{"ts":"2026-11-17T10:50:31Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=131 trace=44bea4aa3418"}
+{"ts":"2026-11-17T10:51:21Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=65 trace=f473867c5305"}
+{"ts":"2026-11-17T10:51:49Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-99142"}
+{"ts":"2026-11-17T10:52:11Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=122 trace=f975995e7382"}
+{"ts":"2026-11-17T10:52:47Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=98 trace=e7329e390fc5"}
+{"ts":"2026-11-17T10:53:36Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-39055"}
+{"ts":"2026-11-17T10:53:38Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=45 trace=d7902b273b5a"}
+{"ts":"2026-11-17T10:53:53Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=130 trace=a4bf2213731b"}
+{"ts":"2026-11-17T10:54:08Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=41 trace=cc409222c21b"}
+{"ts":"2026-11-17T10:55:15Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=39 trace=7ede2e218bc6"}
+{"ts":"2026-11-17T10:55:19Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-90750"}
+{"ts":"2026-11-17T10:55:30Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=31 trace=ceae8728fed5"}
+{"ts":"2026-11-17T10:56:38Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=107 trace=9957a4f5ecab"}
+{"ts":"2026-11-17T10:56:41Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=49 trace=9db15a896a06"}
+{"ts":"2026-11-17T10:56:49Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-96081"}
+{"ts":"2026-11-17T10:57:58Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=115 trace=ba59e2cccde4"}
+{"ts":"2026-11-17T10:58:28Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-44756"}
+{"ts":"2026-11-17T10:58:55Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=137 trace=d2a4cf34cae0"}
+{"ts":"2026-11-17T10:59:33Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=70 trace=3901f277d993"}
+{"ts":"2026-11-17T10:59:59Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=107 trace=f2c796dfd521"}
+{"ts":"2026-11-17T11:00:16Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-17132"}
+{"ts":"2026-11-17T11:00:38Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=96 trace=7764185b0b99"}
+{"ts":"2026-11-17T11:01:26Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=32 trace=d5b5e91e872c"}
+{"ts":"2026-11-17T11:01:28Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=96 trace=1856bb8d1b25"}
+{"ts":"2026-11-17T11:01:52Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-33632"}
+{"ts":"2026-11-17T11:02:41Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=93 trace=acfaabff9b9b"}
+{"ts":"2026-11-17T11:02:42Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=112 trace=a34a75103d50"}
+{"ts":"2026-11-17T11:03:25Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-96287"}
+{"ts":"2026-11-17T11:04:04Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=54 trace=7da63c85c7fb"}
+{"ts":"2026-11-17T11:04:42Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=109 trace=6ebdc9ddb5c8"}
+{"ts":"2026-11-17T11:05:08Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-31737"}
+{"ts":"2026-11-17T11:05:24Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=134 trace=a50a5d0e49aa"}
+{"ts":"2026-11-17T11:05:25Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=139 trace=b2961fe0204f"}
+{"ts":"2026-11-17T11:06:47Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=28 trace=41c10606a30b"}
+{"ts":"2026-11-17T11:06:56Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-93842"}
+{"ts":"2026-11-17T11:07:11Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=76 trace=e11ece6ca77b"}
+{"ts":"2026-11-17T11:07:40Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=131 trace=1085cf1434d3"}
+{"ts":"2026-11-17T11:08:26Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=56 trace=3014fca52b90"}
+{"ts":"2026-11-17T11:08:28Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-48068"}
+{"ts":"2026-11-17T11:09:34Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=49 trace=00967b523b62"}
+{"ts":"2026-11-17T11:09:59Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-67546"}
+{"ts":"2026-11-17T11:10:04Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=132 trace=6a0983c78240"}
+{"ts":"2026-11-17T11:10:13Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=63 trace=ec85c108cb87"}
+{"ts":"2026-11-17T11:11:36Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=108 trace=39a97262e3b9"}
+{"ts":"2026-11-17T11:11:43Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=82 trace=9ceb9a44fdb7"}
+{"ts":"2026-11-17T11:11:44Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-44313"}
+{"ts":"2026-11-17T11:12:29Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=125 trace=e0ae08c6aff8"}
+{"ts":"2026-11-17T11:12:56Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=121 trace=513a761c603c"}
+{"ts":"2026-11-17T11:13:22Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-58655"}
+{"ts":"2026-11-17T11:13:45Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=74 trace=69ddbe42becf"}
+{"ts":"2026-11-17T11:14:11Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=65 trace=d81e72604458"}
+{"ts":"2026-11-17T11:15:01Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=73 trace=6fb04e0087af"}
+{"ts":"2026-11-17T11:15:09Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-10391"}
+{"ts":"2026-11-17T11:15:25Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=41 trace=e696ee3af573"}
+{"ts":"2026-11-17T11:16:19Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=113 trace=623d7237fdf0"}
+{"ts":"2026-11-17T11:16:40Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=78 trace=3c3cea42ac94"}
+{"ts":"2026-11-17T11:16:46Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-95879"}
+{"ts":"2026-11-17T11:18:05Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=40 trace=40313be173a4"}
+{"ts":"2026-11-17T11:18:21Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=22 trace=e9717f2ed1d6"}
+{"ts":"2026-11-17T11:18:26Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-86616"}
+{"ts":"2026-11-17T11:18:54Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=90 trace=994d6f739d27"}
+{"ts":"2026-11-17T11:19:49Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=39 trace=94ddd0209369"}
+{"ts":"2026-11-17T11:20:05Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-90941"}
+{"ts":"2026-11-17T11:20:27Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=69 trace=54879f6a535b"}
+{"ts":"2026-11-17T11:21:19Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=57 trace=dff803493e62"}
+{"ts":"2026-11-17T11:21:43Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-94294"}
+{"ts":"2026-11-17T11:22:11Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=94 trace=80be66fae9c7"}
+{"ts":"2026-11-17T11:22:19Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=46 trace=c2e80b15705c"}
+{"ts":"2026-11-17T11:23:29Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-90239"}
+{"ts":"2026-11-17T11:23:33Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=29 trace=108b888c5d40"}
+{"ts":"2026-11-17T11:23:53Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=33 trace=5ba578e5b7ab"}
+{"ts":"2026-11-17T11:24:13Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=23 trace=51feae8a34b1"}
+{"ts":"2026-11-17T11:25:07Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-33372"}
+{"ts":"2026-11-17T11:25:16Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=89 trace=daaf5e565a9d"}
+{"ts":"2026-11-17T11:25:54Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=110 trace=a00d7c5f57d1"}
+{"ts":"2026-11-17T11:26:04Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=33 trace=febf0540a77e"}
+{"ts":"2026-11-17T11:26:57Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-95689"}
+{"ts":"2026-11-17T11:27:33Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=127 trace=c7a9f970e8dd"}
+{"ts":"2026-11-17T11:27:59Z","level":"info","msg":"method=GET path=/login status=200 dur_ms=135 trace=6ab20b9169b7"}
+{"ts":"2026-11-17T11:28:03Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=36 trace=3612881c573a"}
+{"ts":"2026-11-17T11:28:46Z","level":"warn","msg":"session refresh rejected by auth-api status=401 user=u-42488"}
+{"ts":"2026-11-17T11:29:34Z","level":"info","msg":"method=GET path=/session/refresh status=200 dur_ms=114 trace=93094e406a36"}
